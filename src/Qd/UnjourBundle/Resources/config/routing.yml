@@ -1,3 +1,8 @@
 qd_unjour_homepage:
     path:     /hello/{name}
     defaults: { _controller: QdUnjourBundle:Default:index }
+
+Hello:
+    path:     /hello
+    defaults: { _controller: QdUnjourBundle:Unjour:index }
+
