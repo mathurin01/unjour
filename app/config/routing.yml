@@ -1,0 +1,4 @@
+qd_unjour:
+    resource: "@QdUnjourBundle/Resources/config/routing.yml"
+    prefix:   /
+
