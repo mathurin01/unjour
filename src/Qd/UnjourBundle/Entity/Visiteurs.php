@@ -12,6 +12,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Visiteurs
 {
+    public function __construct(){
+        $this->setFirstCon(new \DateTime('now'));
+        $this->setLastCon(new \DateTime('0000-00-00 00:00:00'));
+        $this->setNb(1);
+    }
+
     /**
      * @var integer
      *
