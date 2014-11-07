@@ -22,39 +22,32 @@ class Visiteurs
     private $id;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="adr_ip", type="string", length=15)
+     * @ORM\Column(name="adip", type="integer")
      */
     private $adrIp;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="adr_ip_int", type="integer")
-     */
-    private $adrIpInt;
-
-    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="first_con", type="date")
+     * @ORM\Column(name="firstcon", type="date")
      */
     private $firstCon;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="last_con", type="date")
+     * @ORM\Column(name="lastcon", type="date")
      */
     private $lastCon;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="nb_con", type="integer")
+     * @ORM\Column(name="nb", type="integer")
      */
-    private $nbCon;
+    private $nb;
 
 
     /**
@@ -70,7 +63,7 @@ class Visiteurs
     /**
      * Set adrIp
      *
-     * @param string $adrIp
+     * @param integer $adrIp
      * @return Visiteurs
      */
     public function setAdrIp($adrIp)
@@ -83,34 +76,11 @@ class Visiteurs
     /**
      * Get adrIp
      *
-     * @return string 
+     * @return integer 
      */
     public function getAdrIp()
     {
         return $this->adrIp;
-    }
-
-    /**
-     * Set adrIpInt
-     *
-     * @param integer $adrIpInt
-     * @return Visiteurs
-     */
-    public function setAdrIpInt($adrIpInt)
-    {
-        $this->adrIpInt = $adrIpInt;
-
-        return $this;
-    }
-
-    /**
-     * Get adrIpInt
-     *
-     * @return integer 
-     */
-    public function getAdrIpInt()
-    {
-        return $this->adrIpInt;
     }
 
     /**
@@ -160,25 +130,25 @@ class Visiteurs
     }
 
     /**
-     * Set nbCon
+     * Set nb
      *
-     * @param integer $nbCon
+     * @param integer $nb
      * @return Visiteurs
      */
-    public function setNbCon($nbCon)
+    public function setNb($nb)
     {
-        $this->nbCon = $nbCon;
+        $this->nb = $nb;
 
         return $this;
     }
 
     /**
-     * Get nbCon
+     * Get nb
      *
      * @return integer 
      */
-    public function getNbCon()
+    public function getNb()
     {
-        return $this->nbCon;
+        return $this->nb;
     }
 }
