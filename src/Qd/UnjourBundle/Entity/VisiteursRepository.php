@@ -14,6 +14,13 @@ class VisiteursRepository extends EntityRepository
 {
 
     /*
+     * liens :
+     * http://stackoverflow.com/questions/5133580/which-mysql-datatype-for-an-ip-address
+     * http://blog.chatwee.com/2014/02/storing-ip-address-in-mysql-database/
+     * http://stackoverflow.com/questions/3488536/mysql-create-time-and-update-time-timestamp
+     * http://gusiev.com/2009/04/update-and-create-timestamps-with-mysql/
+     *
+     *
      * scripts effectués :
      * dump de la bdb
      *

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisiteursRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisiteursRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,7 +29,7 @@
       <file leaf-file-name="UnjourController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+            <state line="17" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -39,7 +38,7 @@
       <file leaf-file-name="Visiteurs.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="-26.153847" vertical-offset="153" max-vertical-offset="2720">
+            <state line="49" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="-0.0" vertical-offset="833" max-vertical-offset="2720">
               <folding />
             </state>
           </provider>
@@ -48,7 +47,7 @@
       <file leaf-file-name="VisiteursRepository.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisiteursRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="68" selection-start="737" selection-end="737" vertical-scroll-proportion="0.72131145" vertical-offset="9" max-vertical-offset="935">
+            <state line="24" column="21" selection-start="682" selection-end="682" vertical-scroll-proportion="0.60804766" vertical-offset="0" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -81,7 +80,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="793" />
-    <option name="y" value="23" />
+    <option name="y" value="28" />
     <option name="width" value="1032" />
     <option name="height" value="868" />
   </component>
@@ -111,6 +110,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,7 +193,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,8 +200,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity" />
+    </key>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -217,7 +221,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="793" y="23" width="1032" height="868" extended-state="0" />
+    <frame x="793" y="28" width="1032" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -255,6 +259,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisiteursRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="68" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="374">
           <folding />
         </state>
@@ -272,21 +297,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+        <state line="17" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="-26.153847" vertical-offset="153" max-vertical-offset="2720">
+        <state line="49" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="2720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisiteursRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="68" selection-start="737" selection-end="737" vertical-scroll-proportion="0.72131145" vertical-offset="9" max-vertical-offset="935">
+        <state line="24" column="21" selection-start="682" selection-end="682" vertical-scroll-proportion="0.60804766" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
