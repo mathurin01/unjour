@@ -45,7 +45,7 @@ class Publicites
      * @var integer
      *
      * @ORM\OneToOne(targetEntity="Qd\UnjourBundle\Entity\ListeJournaux")
-     * @ORM\JoinColumn(name="journalid", referencedColumnName="id")
+     * @ORM\Column(name="journal_id", type="integer")
      */
     private $journalId;
 
@@ -109,12 +109,12 @@ class Publicites
     /**
      * Set journalId
      *
-     * @param Qd\UnjourBundle\Entity\ListeJournaux $journalid
-     * @return Journalid
+     * @param Qd\UnjourBundle\Entity\ListeJournaux $journal
+     * @return Journal
      */
-    public function setJournalId(Qd\UnjourBundle\Entity\ListeJournaux $journalid = null)
+    public function setJournalId(Qd\UnjourBundle\Entity\ListeJournaux $journal = null)
     {
-        $this->journalId = $journalid;
+        $this->journalId = $journal;
 
         return $this;
     }

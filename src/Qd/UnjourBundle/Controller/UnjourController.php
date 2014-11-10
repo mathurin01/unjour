@@ -11,7 +11,11 @@ class UnjourController extends Controller
 {
 	public function indexAction()
 	{
-		return $this->render('QdUnjourBundle:Unjour:index.html.twig', array('nom' => 'Jérôme'));
+        $repo = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Publicites');
+        $pub = $repo->findById(1);
+
+		return $this->render('QdUnjourBundle:Unjour:index.html.twig',
+                array('nom' => 'Jérôme', 'pub' => $pub));
 	}
 }
 

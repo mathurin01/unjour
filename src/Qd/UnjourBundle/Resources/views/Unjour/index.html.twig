@@ -13,6 +13,19 @@
 		réussi à exécuter le programme pour accomplir une tâche simple
 		afficher ce hello world !
 		</p>
+    <h2>Publicités</h2>
+    <p>
+
+
+        {% for p in pub %}
+            {{ p.id }}<br />
+            {{ p.dateParution|date('d/m/Y') }}<br />
+            {{ p.path }}<br />
+            {{ p.journalid.nom }}
+
+        {% endfor %}
+
+    </p>
 	</body>
 </html>
 
