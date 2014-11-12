@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Acteurs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/ListeJournaux.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Photos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Acteurs.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Acteurs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chrono.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chrono.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Photos.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Photos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Unes_Journaux.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Unes_Journaux.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/unjour.iml" afterPath="$PROJECT_DIR$/.idea/unjour.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="" />
     <ignored path="unjour.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,19 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tags.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Tags.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="-9.423077" vertical-offset="180" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Visiteurs.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="81" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.7680098" vertical-offset="663" max-vertical-offset="2839">
+            <state line="27" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="0.2991453" vertical-offset="180" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -483,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="-9.423077" vertical-offset="180" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="213" column="9" selection-start="0" selection-end="24252" vertical-scroll-proportion="-22.653847" vertical-offset="3032" max-vertical-offset="3893">
@@ -519,7 +488,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="81" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.7680098" vertical-offset="663" max-vertical-offset="2839">
+        <state line="81" column="0" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.8717949" vertical-offset="663" max-vertical-offset="2839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="0.2991453" vertical-offset="180" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
