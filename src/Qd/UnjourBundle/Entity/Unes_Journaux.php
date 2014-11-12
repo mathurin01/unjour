@@ -24,14 +24,14 @@ class Unes_Journaux
     /**
      * @var \Date
      *
-     * @ORM\Column(name="date_parution", type="date")
+     * @ORM\Column(name="dateparution", type="date")
      */
     private $dateParution;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="journal_id", type="integer")
+     * @ORM\Column(name="journalid", type="integer")
      */
     private $journalId;
 
@@ -59,7 +59,7 @@ class Unes_Journaux
     /**
      * @var integer
      *
-     * @ORM\Column(name="tags_id", type="integer")
+     * @ORM\Column(name="tagsid", type="integer")
      */
     private $tagsId;
 

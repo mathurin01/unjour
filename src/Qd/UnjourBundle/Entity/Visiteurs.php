@@ -30,7 +30,7 @@ class Visiteurs
     /**
      * @var integer
      *
-     * @ORM\Column(name="adip", type="integer")
+     * @ORM\Column(name="adrip", type="integer")
      */
     private $adrIp;
 
@@ -74,7 +74,8 @@ class Visiteurs
      */
     public function setAdrIp($adrIp)
     {
-        $this->adrIp = $adrIp;
+        // http://www.fobec.com/php5/1018/stocker-une-adresse-dans-une-mysql.html
+        $this->adrIp = ip2long($adrIp);
 
         return $this;
     }
@@ -86,7 +87,7 @@ class Visiteurs
      */
     public function getAdrIp()
     {
-        return $this->adrIp;
+        return $this->inet_ntoa(adrIp);
     }
 
     /**

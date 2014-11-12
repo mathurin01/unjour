@@ -45,7 +45,7 @@ class Photos
     /**
      * @var string
      *
-     * @ORM\Column(name="lien_url", type="string", length=255)
+     * @ORM\Column(name="lienurl", type="string", length=255)
      */
     private $lienUrl;
 

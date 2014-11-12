@@ -38,14 +38,14 @@ class Acteurs
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_nais", type="datetime")
+     * @ORM\Column(name="datenais", type="datetime")
      */
     private $dateNais;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_deces", type="datetime")
+     * @ORM\Column(name="datedeces", type="datetime")
      */
     private $dateDeces;
 

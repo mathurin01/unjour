@@ -12,13 +12,12 @@ class Tag implements FixtureInterface
 // Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
 	public function load(ObjectManager $manager)
 	{
-		// Liste des noms de catégorie à ajouter
+		// Liste des noms de tag à ajouter
 		$noms = array(
 			'Front de l\'ouest', 
 			'Front de l\'est', 
 			'Italie', 
 			'Moye-Orient',
-			'Balkans',
 			'Balkans',
 			'Afrique',
 			'Marine',
@@ -41,6 +40,7 @@ class Tag implements FixtureInterface
 			// On crée le tag
 			$liste_tags[$i] = new Tags();
 			$liste_tags[$i]->setNom($nom);
+            $liste_tags[$i]->setLogo("indefini");
 			$liste_tags[$i]->setIndice(1);
 	
 			// On la persiste

@@ -24,14 +24,14 @@ class Chrono
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_deb", type="datetime")
+     * @ORM\Column(name="datedeb", type="datetime")
      */
     private $dateDeb;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_fin", type="datetime")
+     * @ORM\Column(name="datefin", type="datetime")
      */
     private $dateFin;
 
@@ -80,7 +80,7 @@ class Chrono
     /**
      * @var integer
      *
-     * @ORM\Column(name="acteurs_id", type="integer")
+     * @ORM\Column(name="acteursid", type="integer")
      */
     private $acteursId;
 

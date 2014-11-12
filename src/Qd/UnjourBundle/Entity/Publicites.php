@@ -30,7 +30,7 @@ class Publicites
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_parution", type="date")
+     * @ORM\Column(name="dateparution", type="date")
      */
     private $dateParution;
 
