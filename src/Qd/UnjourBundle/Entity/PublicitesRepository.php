@@ -12,4 +12,11 @@ use Doctrine\ORM\EntityRepository;
  */
 class PublicitesRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * afficher la Photo de la publicité en side :
+     *      - par date
+     *      - par tag
+     */
 }

@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class OpendataRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * afficher les photos Opendata :
+     *      - par date
+     *      - par tag
+     *      - par Pays/Départements/Communes/Auteurs/Artistes/Series
+     * mettre en place un système de navigation si le nb de données est élevé.
+     */
 }

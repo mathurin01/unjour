@@ -12,4 +12,9 @@ use Doctrine\ORM\EntityRepository;
  */
 class PhotosRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * prévoir (éventuellement) la mise en place d'une page photo avec, à l'intérieur celle de l'Opendata
+     */
 }

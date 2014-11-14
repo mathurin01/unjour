@@ -12,4 +12,17 @@ use Doctrine\ORM\EntityRepository;
  */
 class ChronosRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * 1 afficher la liste des chronos :
+     *      - par date
+     *      - par tags
+     *      - si il y a une endTime, c'est "événement"
+     *      - sinon, c'est un "fait du jour"
+     * 2 la pres d'une Chrono s'affiche en side
+     * 3 si il y une descr, une(s) photos, un bilan (facultatif), possibilité d'afficher une page "détails"
+     *      - s'il y a un actor, le mettre en side de la page détails
+     * 4 le descr s'affiche dans la page détail
+     */
 }

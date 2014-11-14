@@ -12,4 +12,12 @@ use Doctrine\ORM\EntityRepository;
  */
 class FrontNewspapersRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * Afficher le Frontnewspaper
+     *      - par date
+     *      - par tag
+     *      - par Newspaper
+     */
 }

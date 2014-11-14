@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class ActorsRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * 1 afficher les informations d'un auteur (name, firstname, birth, death, pres (side), descr, photos (side) et tags)
+     * 2 avoir la liste des auteurs (name, firstname, birth, death, pres (éventuellement) et photos (petite))
+     * 3 chercher un auteur (par name et tags)
+     * 4 afficher les Books (carnets) s'il y en a de rattaché à cet Actor (tableau de books (page)
+     * 5 afficher la liste de Chronos associés à cet Actor
+     */
 }

@@ -12,4 +12,17 @@ use Doctrine\ORM\EntityRepository;
  */
 class VisitorsRepository extends EntityRepository
 {
+    /*
+     * TODO
+     *
+     * Obtenir :
+     *  - nb de visites (clics) par jour
+     *  - nb de visites unique par jour
+     *  - nb de visites sur les 7 derniers jours
+     *  - nb de visites sur les 30 derniers jours
+     *  - nb de visites totales
+     *  - liste des ip :
+     *      - par nb de clic
+     *      - par date
+     */
 }
