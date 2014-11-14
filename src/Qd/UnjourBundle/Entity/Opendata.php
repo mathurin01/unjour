@@ -185,9 +185,15 @@ class Opendata
     /**
      * @var integer
      *
-     * @ORM\Column(name="tagsid", type="integer")
+     * @ORM\ManyToMany(targetEntity="Tags", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $tagsid;
+    private $tags;
+
+    public function __construct()
+    {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
 
     /**
@@ -730,25 +736,48 @@ class Opendata
     }
 
     /**
-     * Set tagsid
+     * Set tags
      *
-     * @param integer $tagsid
-     * @return Opendata
+     * @param Tags $tags
+     * @return Tags
      */
-    public function setTagsid($tagsid)
+    public function setTags(Tags $tags = null)
     {
-        $this->tagsid = $tagsid;
+        $this->tagsid = $tags;
 
         return $this;
     }
 
     /**
-     * Get tagsid
+     * Get tags
      *
-     * @return integer 
+     * @return Tags
      */
-    public function getTagsid()
+    public function getTags()
     {
-        return $this->tagsid;
+        return $this->tags;
+    }
+
+    /**
+     * Add tags
+     *
+     * @param Tags $tags
+     * @return Opendata
+     */
+    public function addTag(Tags $tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Remove tags
+     *
+     * @param Tags $tags
+     */
+    public function removeTag(Tags $tags)
+    {
+        $this->tags->removeElement($tags);
     }
 }

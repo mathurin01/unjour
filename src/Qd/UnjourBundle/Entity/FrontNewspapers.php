@@ -5,12 +5,12 @@ namespace Qd\UnjourBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Unes_Journaux
+ * FrontNewspapers
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Qd\UnjourBundle\Entity\Unes_JournauxRepository")
+ * @ORM\Entity(repositoryClass="Qd\UnjourBundle\Entity\FrontNewspapersRepository")
  */
-class Unes_Journaux
+class FrontNewspapers
 {
     /**
      * @var integer
@@ -24,16 +24,17 @@ class Unes_Journaux
     /**
      * @var \Date
      *
-     * @ORM\Column(name="dateparution", type="date")
+     * @ORM\Column(name="dcreat", type="date")
      */
-    private $dateParution;
+    private $dcreat;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="journalid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Newspapers", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $journalId;
+    private $newspaper;
 
     /**
      * @var string
@@ -52,17 +53,22 @@ class Unes_Journaux
     /**
      * @var string
      *
-     * @ORM\Column(name="vignette_export", type="string", length=255)
+     * @ORM\Column(name="vignetteexport", type="string", length=255)
      */
     private $vignetteExport;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="tagsid", type="integer")
+     * @ORM\ManyToMany(targetEntity="Tags", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $tagsId;
+    private $tags;
 
+    public function __construct()
+    {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -75,56 +81,56 @@ class Unes_Journaux
     }
 
     /**
-     * Set dateParution
+     * Set dcreat
      *
-     * @param \DateTime $dateParution
-     * @return Unes_Journaux
+     * @param \DateTime $dcreat
+     * @return FrontNewspapers
      */
-    public function setDateParution($dateParution)
+    public function setDcreat($dcreat)
     {
-        $this->dateParution = $dateParution;
+        $this->dcreat = $dcreat;
 
         return $this;
     }
 
     /**
-     * Get dateParution
+     * Get dcreat
      *
      * @return \DateTime 
      */
-    public function getDateParution()
+    public function getDcreat()
     {
-        return $this->dateParution;
+        return $this->dcreat;
     }
 
     /**
-     * Set journalId
+     * Set newspaper
      *
-     * @param integer $journalId
-     * @return Unes_Journaux
+     * @param Newspapers $newspaper
+     * @return FrontNewspapers
      */
-    public function setJournalId($journalId)
+    public function setNewspaper(Newspapers $newspaper = null)
     {
-        $this->journalId = $journalId;
+        $this->newspaper = $newspaper;
 
         return $this;
     }
 
     /**
-     * Get jorunalId
+     * Get newspaper
      *
-     * @return integer 
+     * @return \Qd\UnjourBundle\Entity\Newspapers
      */
-    public function getJournalId()
+    public function getNewspaper()
     {
-        return $this->journalId;
+        return $this->newspaper;
     }
 
     /**
      * Set path
      *
      * @param string $path
-     * @return Unes_Journaux
+     * @return FrontNewspapers
      */
     public function setPath($path)
     {
@@ -147,7 +153,7 @@ class Unes_Journaux
      * Set permalien
      *
      * @param string $permalien
-     * @return Unes_Journaux
+     * @return FrontNewspapers
      */
     public function setPermalien($permalien)
     {
@@ -170,7 +176,7 @@ class Unes_Journaux
      * Set vignetteExport
      *
      * @param string $vignetteExport
-     * @return Unes_Journaux
+     * @return FrontNewspapers
      */
     public function setVignetteExport($vignetteExport)
     {
@@ -190,25 +196,49 @@ class Unes_Journaux
     }
 
     /**
-     * Set tagsId
+     * Set tags
      *
-     * @param integer $tagsId
-     * @return Unes_Journaux
+     * @param Tags $tags
+     * @return FrontNewspapers
      */
-    public function setTagsId($tagsId)
+    public function setTags(Tags $tags = null)
     {
-        $this->tagsId = $tagsId;
+        $this->tags = $tags;
 
         return $this;
     }
 
     /**
-     * Get tagsId
+     * Get tags
      *
-     * @return integer 
+     * @return Tags
      */
-    public function getTagsId()
+    public function getTags()
     {
-        return $this->tagsId;
+        return $this->tags;
+    }
+
+
+    /**
+     * Add tags
+     *
+     * @param Tags $tags
+     * @return FrontNewspapers
+     */
+    public function addTag(Tags $tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Remove tags
+     *
+     * @param Tags $tags
+     */
+    public function removeTag(Tags $tags)
+    {
+        $this->tags->removeElement($tags);
     }
 }

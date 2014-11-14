@@ -30,9 +30,9 @@ class Publicites
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateparution", type="date")
+     * @ORM\Column(name="dcreat", type="date")
      */
-    private $dateParution;
+    private $dcreat;
 
     /**
      * @var string
@@ -44,10 +44,24 @@ class Publicites
     /**
      * @var integer
      *
-     * @ORM\OneToOne(targetEntity="Qd\UnjourBundle\Entity\ListeJournaux")
-     * @ORM\JoinColumn(name="journalid", referencedColumnName="id")
+     * @ORM\OneToOne(targetEntity="Newspapers")
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $journalId;
+    private $newspaper;
+
+    /**
+     * @var integer
+     *
+     * @ORM\ManyToMany(targetEntity="Tags", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $tags;
+
+    public function __construct()
+    {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
 
 
     /**
@@ -61,7 +75,7 @@ class Publicites
     }
 
     /**
-     * Set pathphp app/console
+     * Set path
      *
      * @param string $path
      * @return Publicites
@@ -74,7 +88,7 @@ class Publicites
     }
 
     /**
-     * Get dateParution
+     * Get path
      *
      * @return string
      */
@@ -84,48 +98,94 @@ class Publicites
     }
 
     /**
-     * Set dateParution
+     * Set dcreat
      *
-     * @param \DateTime $dateParution
+     * @param \DateTime $dcreat
      * @return Publicites
      */
-    public function setDateParution($dateParution)
+    public function setDcreat($dcreat)
     {
-        $this->dateParution = $dateParution;
+        $this->dcreat = $dcreat;
 
         return $this;
     }
 
     /**
-     * Get dateParution
+     * Get dcreat
      *
      * @return \DateTime
      */
-    public function getDateParution()
+    public function getDcreat()
     {
-        return $this->dateParution;
+        return $this->dcreat;
     }
 
     /**
-     * Set journalId
+     * Set newspaper
      *
-     * @param Qd\UnjourBundle\Entity\ListeJournaux $journalid
-     * @return Journalid
+     * @param Newspapers $newspaper
+     * @return Newspapers
      */
-    public function setJournalId(Qd\UnjourBundle\Entity\ListeJournaux $journalid = null)
+    public function setNewspaper(Newspapers $newspaper = null)
     {
-        $this->journalId = $journalid;
+        $this->newspaper = $newspaper;
 
         return $this;
     }
 
     /**
-     * Get journalId
+     * Get newspaper
      *
-     * @return integer 
+     * @return Newspapers
      */
-    public function getJournalId()
+    public function getNewspaper()
     {
-        return $this->journalId;
+        return $this->newspaper;
+    }
+
+    /**
+     * Set tags
+     *
+     * @param Tags $tags
+     * @return Tags
+     */
+    public function setTags(Tags $tags = null)
+    {
+        $this->tags = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Get tags
+     *
+     * @return Tags
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    /**
+     * Add tags
+     *
+     * @param Tags $tags
+     * @return Publicites
+     */
+    public function addTag(Tags $tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Remove tags
+     *
+     * @param Tags $tags
+     */
+    public function removeTag(Tags $tags)
+    {
+        $this->tags->removeElement($tags);
     }
 }

@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="" />
+    <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Actors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Books.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/FrontNewspapers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Opendata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Publicites.php" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\DataFixtures\ORM\Acteurs.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\ActeursRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\CarnetsRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\ChronoRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\ListeJournauxRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\Unes_JournauxRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\VisiteursRepository.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\DataFixtures\ORM\ListeJournaux.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Newspapers.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\Acteurs.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Actors.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\Carnets.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Books.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\Chrono.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chronos.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\ListeJournaux.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Newspapers.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\Unes_Journaux.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapers.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\unjour\src\Qd\UnjourBundle\Entity\Visiteurs.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visitors.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Opendata.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Opendata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Photos.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Photos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/views/Unjour/index.html.twig" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/views/Unjour/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="unjour.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,75 +54,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UnjourController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php">
+      <file leaf-file-name="FrontNewspapers.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+            <state line="62" column="7" selection-start="1116" selection-end="1359" vertical-scroll-proportion="-2.831169" vertical-offset="836" max-vertical-offset="4250">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tags.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php">
+      <file leaf-file-name="Publicites.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Publicites.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="0.2991453" vertical-offset="180" max-vertical-offset="1020">
+            <state line="64" column="22" selection-start="2383" selection-end="2383" vertical-scroll-proportion="-29.384615" vertical-offset="324" max-vertical-offset="1649">
+              <folding>
+                <element signature="e#107#156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Books.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Books.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="87" selection-start="5572" selection-end="5817" vertical-scroll-proportion="-3.6923077" vertical-offset="1077" max-vertical-offset="2176">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Visiteurs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php">
+      <file leaf-file-name="Books.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Books.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="983" column="0" selection-start="86785" selection-end="86785" vertical-scroll-proportion="-4.805195" vertical-offset="16341" max-vertical-offset="17374">
-              <folding>
-                <element signature="e#106#156#0" expanded="true" />
-              </folding>
+            <state line="61" column="19" selection-start="1065" selection-end="1065" vertical-scroll-proportion="70.80769" vertical-offset="2878" max-vertical-offset="4267">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chronos.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php">
+      <file leaf-file-name="Publicites.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="9" selection-start="0" selection-end="24252" vertical-scroll-proportion="-22.653847" vertical-offset="3032" max-vertical-offset="3893">
-              <folding>
-                <element signature="e#104#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Photos.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Photos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="562" selection-end="1515" vertical-scroll-proportion="-4.8461537" vertical-offset="163" max-vertical-offset="1003">
-              <folding>
-                <element signature="e#103#153#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Acteurs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Acteurs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="40" selection-start="540" selection-end="540" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="680">
-              <folding>
-                <element signature="e#104#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListeJournaux.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/ListeJournaux.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="258" selection-end="258" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1394">
-              <folding>
-                <element signature="e#110#160#0" expanded="true" />
-              </folding>
+            <state line="180" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.7380952" vertical-offset="2440" max-vertical-offset="3349">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,30 +119,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisiteursRepository.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/views/Unjour/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Tags.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Photos.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Acteurs.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chrono.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chrono.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Acteurs.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Photos.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Unes_Journaux.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/ListeJournaux.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Newspapers.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Newspapers.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visitors.php" />
         <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php" />
-        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/FrontNewspapers.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapers.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Actors.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Actors.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Books.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Books.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chronos.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Opendata.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Opendata.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Publicites.php" />
+        <option value="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="33" />
-    <option name="width" value="945" />
+    <option name="x" value="-35" />
+    <option name="y" value="27" />
+    <option name="width" value="1144" />
     <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -166,6 +171,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,6 +248,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnjourBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnjourBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -276,9 +342,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unjour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnjourBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,8 +377,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -337,25 +428,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="33" width="945" height="1024" extended-state="0" />
+    <frame x="-35" y="27" width="1144" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26049516" sideWeight="0.6711956" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30851063" sideWeight="0.6704036" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -378,124 +469,128 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visitors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="61" selection-start="172" selection-end="172" vertical-scroll-proportion="1.7662338" vertical-offset="306" max-vertical-offset="2839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="999" column="17" selection-start="87369" selection-end="87369" vertical-scroll-proportion="-16.346153" vertical-offset="187" max-vertical-offset="1105">
+          <folding>
+            <element signature="e#105#154#0" expanded="true" />
+            <element signature="e#522#86796#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Photos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="562" selection-end="1515" vertical-scroll-proportion="-4.8461537" vertical-offset="163" max-vertical-offset="1003">
+        <state line="12" column="1" selection-start="417" selection-end="417" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Actors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="18" selection-start="4065" selection-end="4065" vertical-scroll-proportion="-12.692307" vertical-offset="4124" max-vertical-offset="5287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Actors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.5139057" vertical-offset="0" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/FrontNewspapers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="45" selection-start="85516" selection-end="85785" vertical-scroll-proportion="-9.923077" vertical-offset="150" max-vertical-offset="1003">
           <folding>
-            <element signature="e#103#153#0" expanded="true" />
+            <element signature="e#112#161#0" expanded="true" />
+            <element signature="e#466#85117#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chrono.php">
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chronos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="32" selection-start="1345" selection-end="1345" vertical-scroll-proportion="-3.1550672" vertical-offset="3978" max-vertical-offset="5270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Acteurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="29" selection-start="803" selection-end="803" vertical-scroll-proportion="-2.7606838" vertical-offset="3060" max-vertical-offset="4760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Carnets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5604396" vertical-offset="459" max-vertical-offset="3740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/ListeJournaux.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Opendata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2380953" vertical-offset="2652" max-vertical-offset="12920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Photos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="29" selection-start="776" selection-end="776" vertical-scroll-proportion="0.72649574" vertical-offset="204" max-vertical-offset="2720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="29" selection-start="478" selection-end="478" vertical-scroll-proportion="-1.2146401" vertical-offset="1523" max-vertical-offset="2329">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Acteurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="540" selection-end="540" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="680">
-          <folding>
-            <element signature="e#104#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Tags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="195" selection-end="195" vertical-scroll-proportion="-0.103785105" vertical-offset="306" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Unes_Journaux.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="29" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.33211234" vertical-offset="765" max-vertical-offset="3740">
+        <state line="329" column="30" selection-start="5167" selection-end="5167" vertical-scroll-proportion="-25.653847" vertical-offset="4926" max-vertical-offset="5780">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Chronos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="9" selection-start="0" selection-end="24252" vertical-scroll-proportion="-22.653847" vertical-offset="3032" max-vertical-offset="3893">
+        <state line="215" column="77" selection-start="26495" selection-end="26495" vertical-scroll-proportion="0.6845238" vertical-offset="20" max-vertical-offset="1037">
           <folding>
             <element signature="e#104#154#0" expanded="true" />
+            <element signature="e#493#25743#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/ListeJournaux.php">
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Newspapers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="258" selection-end="258" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1394">
-          <folding>
-            <element signature="e#110#160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="983" column="0" selection-start="86785" selection-end="86785" vertical-scroll-proportion="-4.805195" vertical-offset="16341" max-vertical-offset="17374">
-          <folding>
-            <element signature="e#106#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visiteurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.8717949" vertical-offset="663" max-vertical-offset="2839">
+        <state line="75" column="26" selection-start="1176" selection-end="1176" vertical-scroll-proportion="1.2940476" vertical-offset="188" max-vertical-offset="2210">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Tags.php">
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Opendata.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="0.2991453" vertical-offset="180" max-vertical-offset="1020">
+        <state line="306" column="0" selection-start="162387" selection-end="162387" vertical-scroll-proportion="-6.285714" vertical-offset="451" max-vertical-offset="1326">
+          <folding>
+            <element signature="e#105#155#0" expanded="true" />
+            <element signature="e#574#161083#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Opendata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="778" column="30" selection-start="11631" selection-end="11631" vertical-scroll-proportion="0.77738094" vertical-offset="12573" max-vertical-offset="13413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="7" selection-start="1116" selection-end="1359" vertical-scroll-proportion="-2.831169" vertical-offset="836" max-vertical-offset="4250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Publicites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="22" selection-start="2383" selection-end="2383" vertical-scroll-proportion="-29.384615" vertical-offset="324" max-vertical-offset="1649">
+          <folding>
+            <element signature="e#107#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Books.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="87" selection-start="5572" selection-end="5817" vertical-scroll-proportion="-3.6923077" vertical-offset="1077" max-vertical-offset="2176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Books.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="19" selection-start="1065" selection-end="1065" vertical-scroll-proportion="70.80769" vertical-offset="2878" max-vertical-offset="4267">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.7380952" vertical-offset="2440" max-vertical-offset="3349">
           <folding />
         </state>
       </provider>

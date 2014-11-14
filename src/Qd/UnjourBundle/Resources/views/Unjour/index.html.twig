@@ -21,10 +21,29 @@
             {{ p.id }}<br />
             {{ p.dateParution|date('d/m/Y') }}<br />
             {{ p.path }}<br />
-            {{ p.journalid.nom }}
+            {# p.journalid.id #}
 
         {% endfor %}
 
+    </p>
+
+
+    -----------------------------------------------
+
+    <h2>Test pour Bdd</h2>
+    <p>
+        {% for u in une %}
+            {{ u.setJournalid.nom }} -
+            {{ u.setTagsid.id }}<br />
+        {% endfor %}
+
+
+        tDateparution(new \DateTime($tab[0]));
+        $une[$i]->setJournalid()->getId($tab[2]);
+        $une[$i]->setPath($tab[3]);
+        $une[$i]->setPermalien($tab[4]);
+        $une[$i]->setVignetteexport($tab[5]);
+        $une[$i]->setTagsid()->getId(14);
     </p>
 	</body>
 </html>

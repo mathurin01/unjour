@@ -1,15 +1,15 @@
 <?php
-// src/Qd/UnjourBundle/DataFixtures/ORM/ListeJournaux.php
+// src/Qd/UnjourBundle/DataFixtures/ORM/Newspapers.php
 
 namespace Qd\UnjourBundle\DataFixtures\ORM;
 
-use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\AbstractFixture;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Qd\UnjourBundle\Entity\ListeJournaux;
+use Qd\UnjourBundle\Entity\Newspapers;
 
-class ListeJournal implements FixtureInterface
+class Newspaper extends AbstractFixture implements OrderedFixtureInterface
 {
-// Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
     public function load(ObjectManager $manager)
     {
         // Liste des noms de journaux à ajouter
@@ -57,18 +57,24 @@ class ListeJournal implements FixtureInterface
         );
         foreach($noms as $i => $nom)
         {
-            // On crée le "listejournal"
-            $listejournaux[$i] = new ListeJournaux();
-            $listejournaux[$i]->setNom($nom);
-            $listejournaux[$i]->setDescr("indefini");
-            $listejournaux[$i]->setPath($path[$i]);
+            $listejournaux = new Newspapers();
+            $listejournaux->setName($nom);
+            $listejournaux->setDescr("indefini");
+            $listejournaux->setPath($path[$i]);
 
-            // On la persiste
-            $manager->persist($listejournaux[$i]);
+            $manager->persist($listejournaux);
         }
-
-        // On déclenche l'enregistrement
         $manager->flush();
+    }
+
+    /**
+     * Get the order of this fixture
+     *
+     * @return integer
+     */
+    function getOrder()
+    {
+        return 3;
     }
 }
 

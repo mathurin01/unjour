@@ -1,13 +1,14 @@
 <?php
-// src/Qd/UnjourBundle/DataFixtures/ORM/Visiteurs.php
+// src/Qd/UnjourBundle/DataFixtures/ORM/Visitors.php
 
 namespace Qd\UnjourBundle\DataFixtures\ORM;
 
-use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\AbstractFixture;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Qd\UnjourBundle\Entity\Visiteurs;
+use Qd\UnjourBundle\Entity\Visitors;
 
-class Visiteur implements FixtureInterface
+class Visitor extends AbstractFixture implements OrderedFixtureInterface
 {
 // Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
     public function load(ObjectManager $manager)
@@ -981,9 +982,7 @@ class Visiteur implements FixtureInterface
         $j = 1;$k = 1;
         foreach($mytab as $i => $tab)
         {
-
-            // On crée la visite
-            $visit[$i] = new Visiteurs();
+            $visit[$i] = new Visitors();
             $visit[$i]->setAdrip($tab[0]);
             $visit[$i]->setFirstcon(new \DateTime($tab[1]));
             $visit[$i]->setLastcon(new \DateTime($tab[2]));
@@ -1002,13 +1001,20 @@ class Visiteur implements FixtureInterface
             }
             $j++;
 
-            // On la persiste
             $manager->persist($visit[$i]);
         }
 
-
-        // On déclenche l'enregistrement
         $manager->flush();
+    }
+
+    /**
+     * Get the order of this fixture
+     *
+     * @return integer
+     */
+    function getOrder()
+    {
+        return 4;
     }
 }
 

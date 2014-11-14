@@ -5,12 +5,12 @@ namespace Qd\UnjourBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Visiteurs
+ * Visitors
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Qd\UnjourBundle\Entity\VisiteursRepository")
+ * @ORM\Entity(repositoryClass="Qd\UnjourBundle\Entity\VisitorsRepository")
  */
-class Visiteurs
+class Visitors
 {
     public function __construct(){
         $this->setFirstCon(new \DateTime('now'));
@@ -70,7 +70,7 @@ class Visiteurs
      * Set adrIp
      *
      * @param integer $adrIp
-     * @return Visiteurs
+     * @return Visitors
      */
     public function setAdrIp($adrIp)
     {
@@ -94,7 +94,7 @@ class Visiteurs
      * Set firstCon
      *
      * @param \DateTime $firstCon
-     * @return Visiteurs
+     * @return Visitors
      */
     public function setFirstCon($firstCon)
     {
@@ -117,7 +117,7 @@ class Visiteurs
      * Set lastCon
      *
      * @param \DateTime $lastCon
-     * @return Visiteurs
+     * @return Visitors
      */
     public function setLastCon($lastCon)
     {
@@ -140,7 +140,7 @@ class Visiteurs
      * Set nb
      *
      * @param integer $nb
-     * @return Visiteurs
+     * @return Visitors
      */
     public function setNb($nb)
     {

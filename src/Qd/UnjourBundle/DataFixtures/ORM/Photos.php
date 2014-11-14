@@ -4,12 +4,13 @@
 namespace Qd\UnjourBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\AbstractFixture;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Qd\UnjourBundle\Entity\Photos;
 
-class Photo implements FixtureInterface
+class Photo extends AbstractFixture implements OrderedFixtureInterface
 {
-// Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
     public function load(ObjectManager $manager)
     {
         $photo1 = new Photos();
@@ -36,16 +37,29 @@ class Photo implements FixtureInterface
         $photo4->setSource("indefini");
         $photo4->setLienUrl("indefini");
 
+        $photo5 = new Photos();
+        $photo5->setLegende("SLouis Barthas");
+        $photo5->setPath("photos/Louis_Barthas.jpg");
+        $photo5->setSource("indefini");
+        $photo5->setLienUrl("indefini");
 
-        // On la persiste
         $manager->persist($photo1);
         $manager->persist($photo2);
         $manager->persist($photo3);
         $manager->persist($photo4);
+        $manager->persist($photo5);
 
-
-        // On déclenche l'enregistrement
         $manager->flush();
+    }
+
+    /**
+     * Get the order of this fixture
+     *
+     * @return integer
+     */
+    function getOrder()
+    {
+        return 1;
     }
 }
 

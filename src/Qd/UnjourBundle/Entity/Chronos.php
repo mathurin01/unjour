@@ -5,12 +5,12 @@ namespace Qd\UnjourBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Chrono
+ * Chronos
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Qd\UnjourBundle\Entity\ChronoRepository")
+ * @ORM\Entity(repositoryClass="Qd\UnjourBundle\Entity\ChronosRepository")
  */
-class Chrono
+class Chronos
 {
     /**
      * @var integer
@@ -24,16 +24,16 @@ class Chrono
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="datedeb", type="datetime")
+     * @ORM\Column(name="startTime", type="datetime")
      */
-    private $dateDeb;
+    private $startTime;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="datefin", type="datetime")
+     * @ORM\Column(name="endTime", type="datetime")
      */
-    private $dateFin;
+    private $endTime;
 
     /**
      * @var string
@@ -66,24 +66,31 @@ class Chrono
     /**
      * @var integer
      *
-     * @ORM\Column(name="tagsid", type="integer")
+     * @ORM\ManyToMany(targetEntity="Tags", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $tagsid;
+    private $tags;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="photosid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Photos", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $photosid;
+    private $photos;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="acteursid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Actors", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $acteursId;
+    private $actors;
 
+    public function __construct()
+    {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -96,56 +103,56 @@ class Chrono
     }
 
     /**
-     * Set dateDeb
+     * Set startTime
      *
-     * @param \DateTime $dateDeb
-     * @return Chrono
+     * @param \DateTime $startTime
+     * @return Chronos
      */
-    public function setDateDeb($dateDeb)
+    public function setStartTime($startTime)
     {
-        $this->dateDeb = $dateDeb;
+        $this->startTime = $startTime;
 
         return $this;
     }
 
     /**
-     * Get dateDeb
+     * Get startTime
      *
      * @return \DateTime 
      */
-    public function getDateDeb()
+    public function getStartTime()
     {
-        return $this->dateDeb;
+        return $this->startTime;
     }
 
     /**
-     * Set dateFin
+     * Set endTime
      *
-     * @param \DateTime $dateFin
-     * @return Chrono
+     * @param \DateTime $endTime
+     * @return Chronos
      */
-    public function setDateFin($dateFin)
+    public function setEndTime($endTime)
     {
-        $this->dateFin = $dateFin;
+        $this->endTime = $endTime;
 
         return $this;
     }
 
     /**
-     * Get dateFin
+     * Get endTime
      *
      * @return \DateTime 
      */
-    public function getDateFin()
+    public function getEndTime()
     {
-        return $this->dateFin;
+        return $this->endTime;
     }
 
     /**
      * Set descr
      *
      * @param string $descr
-     * @return Chrono
+     * @return Chronos
      */
     public function setDescr($descr)
     {
@@ -168,7 +175,7 @@ class Chrono
      * Set pres
      *
      * @param string $pres
-     * @return Chrono
+     * @return Chronos
      */
     public function setPres($pres)
     {
@@ -191,7 +198,7 @@ class Chrono
      * Set bilan
      *
      * @param string $bilan
-     * @return Chrono
+     * @return Chronos
      */
     public function setBilan($bilan)
     {
@@ -214,7 +221,7 @@ class Chrono
      * Set source
      *
      * @param string $source
-     * @return Chrono
+     * @return Chronos
      */
     public function setSource($source)
     {
@@ -234,71 +241,94 @@ class Chrono
     }
 
     /**
-     * Set tagsid
+     * Set tags
      *
-     * @param integer $tagsid
-     * @return Chrono
+     * @param Tags $tags
+     * @return Chronos
      */
-    public function setTagsid($tagsid)
+    public function setTags($tags)
     {
-        $this->tagsid = $tagsid;
+        $this->tags = $tags;
 
         return $this;
     }
 
     /**
-     * Get tagsid
+     * Get tags
      *
-     * @return integer 
+     * @return Tags
      */
-    public function getTagsid()
+    public function getTags()
     {
-        return $this->tagsid;
+        return $this->tags;
     }
 
     /**
-     * Set photosid
+     * Set photos
      *
-     * @param integer $photosid
-     * @return Chrono
+     * @param Photos $photos
+     * @return Photos
      */
-    public function setPhotosid($photosid)
+    public function setPhotos(Photos $photos = null)
     {
-        $this->photosid = $photosid;
+        $this->photos = $photos;
 
         return $this;
     }
 
     /**
-     * Get photosid
+     * Get photos
      *
-     * @return integer 
+     * @return Photos
      */
-    public function getPhotosid()
+    public function getPhotos()
     {
-        return $this->photosid;
+        return $this->photos;
     }
 
     /**
-     * Set acteursId
+     * Set actors
      *
-     * @param integer $acteursId
-     * @return Chrono
+     * @param Actors $actors
+     * @return Actors
      */
-    public function setActeursId($acteursId)
+    public function setActors(Actors $actors = null)
     {
-        $this->acteursId = $acteursId;
+        $this->actors = $actors;
 
         return $this;
     }
 
     /**
-     * Get acteursId
+     * Get actors
      *
-     * @return integer 
+     * @return Actors
      */
-    public function getActeursId()
+    public function getActors()
     {
-        return $this->acteursId;
+        return $this->actors;
+    }
+
+    /**
+     * Add tags
+     *
+     * @param Tags $tags
+     * @return Chronos
+     */
+    public function addTag(Tags $tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Remove tags
+     *
+     * @param Tags $tags
+     */
+    public function removeTag(Tags $tags)
+    {
+        $this->tags->removeElement($tags);
     }
 }
