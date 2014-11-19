@@ -22,9 +22,9 @@ class Books
     private $id;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="dcreat", type="datetime")
+     * @ORM\Column(name="dcreat", type="date")
      */
     private $dcreat;
 
@@ -85,7 +85,7 @@ class Books
     /**
      * Set dcreat
      *
-     * @param \DateTime $dcreat
+     * @param \Date $dcreat
      * @return Books
      */
     public function setDcreat($dcreat)
@@ -98,7 +98,7 @@ class Books
     /**
      * Get dcreat
      *
-     * @return \DateTime 
+     * @return \Date
      */
     public function getDcreat()
     {

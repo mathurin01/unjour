@@ -25,4 +25,78 @@ class VisitorsRepository extends EntityRepository
      *      - par nb de clic
      *      - par date
      */
+
+    public function myNbClicJour($jour)
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('count(v)')
+            ->from($this->_entityName, 'v')
+            ->where('v.firstCon = :madate')
+            ->setParameter('madate', $jour);
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+    public function myNbClicWeek($jour)
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('sum(v.nb)')
+            ->from($this->_entityName, 'v')
+            ->where('v.firstCon >= :madate')
+            ->setParameter('madate', $jour);
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+    public function myNbClicMonth($jour)
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('sum(v.nb)')
+            ->from($this->_entityName, 'v')
+            ->where('v.firstCon >= :madate')
+            ->setParameter('madate', $jour);
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+    public function myNbUniqVisit()
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('v')
+            ->from($this->_entityName, 'v')
+            ->distinct('v.adrip');
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+    public function myBestIp()
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('v')
+            ->from($this->_entityName, 'v')
+            ->orderBy('v.nb', 'ASC')
+            ->setMaxResults(1);
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+    public function myBestDay()
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('max(v.firstCon)')
+            ->from($this->_entityName, 'v')
+            ->orderBy('v.firstCon', 'ASC')
+            ->setMaxResults(1);
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+
+
 }

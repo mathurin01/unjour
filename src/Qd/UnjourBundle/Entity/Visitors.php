@@ -87,7 +87,7 @@ class Visitors
      */
     public function getAdrIp()
     {
-        return $this->inet_ntoa(adrIp);
+        return long2ip($this->adrIp);
     }
 
     /**

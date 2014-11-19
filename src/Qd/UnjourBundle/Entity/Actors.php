@@ -36,16 +36,16 @@ class Actors
     private $firstname;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="birth", type="datetime")
+     * @ORM\Column(name="birth", type="date")
      */
     private $birth;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="death", type="datetime")
+     * @ORM\Column(name="death", type="date")
      */
     private $death;
 
@@ -145,7 +145,7 @@ class Actors
     /**
      * Set birth
      *
-     * @param \DateTime $birth
+     * @param \Date $birth
      * @return Actors
      */
     public function setBirth($birth)
@@ -158,7 +158,7 @@ class Actors
     /**
      * Get birth
      *
-     * @return \DateTime 
+     * @return \Date
      */
     public function getBirth()
     {
@@ -168,7 +168,7 @@ class Actors
     /**
      * Set death
      *
-     * @param \DateTime $death
+     * @param \Date $death
      * @return Actors
      */
     public function setDeath($death)
@@ -181,7 +181,7 @@ class Actors
     /**
      * Get death
      *
-     * @return \DateTime 
+     * @return \Date
      */
     public function getDeath()
     {

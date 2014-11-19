@@ -28,7 +28,7 @@ class Publicites
     private $id;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
      * @ORM\Column(name="dcreat", type="date")
      */
@@ -100,7 +100,7 @@ class Publicites
     /**
      * Set dcreat
      *
-     * @param \DateTime $dcreat
+     * @param \Date $dcreat
      * @return Publicites
      */
     public function setDcreat($dcreat)
@@ -113,7 +113,7 @@ class Publicites
     /**
      * Get dcreat
      *
-     * @return \DateTime
+     * @return \Date
      */
     public function getDcreat()
     {

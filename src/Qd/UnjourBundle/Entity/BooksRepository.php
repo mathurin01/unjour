@@ -12,4 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class BooksRepository extends EntityRepository
 {
+
+
+    public function  myFindByBooks()
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('b')
+            ->from($this->_entityName, 'b')
+            ->groupBy('b.actors');
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
 }

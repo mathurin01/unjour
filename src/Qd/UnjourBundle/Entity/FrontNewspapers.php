@@ -83,7 +83,7 @@ class FrontNewspapers
     /**
      * Set dcreat
      *
-     * @param \DateTime $dcreat
+     * @param \Date $dcreat
      * @return FrontNewspapers
      */
     public function setDcreat($dcreat)
@@ -96,7 +96,7 @@ class FrontNewspapers
     /**
      * Get dcreat
      *
-     * @return \DateTime 
+     * @return \Date
      */
     public function getDcreat()
     {

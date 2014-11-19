@@ -19,5 +19,22 @@ class FrontNewspapersRepository extends EntityRepository
      *      - par date
      *      - par tag
      *      - par Newspaper
+     *
+     * Intégrer un Calendar (SymfonyCal ?)
+     *      http://www.symfocal.com/
      */
+
+
+
+    public function myFindByDate($madate)
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('f')
+            ->from($this->_entityName, 'f')
+            ->where('f.dcreat = :madate')
+            ->setParameter('madate', $madate);
+
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
 }

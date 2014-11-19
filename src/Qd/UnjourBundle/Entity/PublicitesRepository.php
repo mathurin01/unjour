@@ -19,4 +19,16 @@ class PublicitesRepository extends EntityRepository
      *      - par date
      *      - par tag
      */
+
+
+    // Tous les Actors
+    public function myFindByAll()
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('p')
+            ->from($this->_entityName, 'p')
+            ->orderBy('p.dcreat', 'ASC');
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
 }
