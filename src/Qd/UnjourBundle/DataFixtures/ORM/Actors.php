@@ -40,7 +40,7 @@ class Actor extends AbstractFixture implements OrderedFixtureInterface
         $act->setName("Barthas");
         $act->setFirstname("Louis");
         $act->setPhotos($manager->getRepository('QdUnjourBundle:Photos')->find(5));
-        $jj=10;
+        $jj=12;
         for($ii = 0; $ii < 2; $ii++){
             $act->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
             if($jj == 20){

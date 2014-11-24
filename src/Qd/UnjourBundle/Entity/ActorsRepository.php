@@ -21,4 +21,18 @@ class ActorsRepository extends EntityRepository
      * 4 afficher les Books (carnets) s'il y en a de rattaché à cet Actor (tableau de books (page)
      * 5 afficher la liste de Chronos associés à cet Actor
      */
+
+
+    // Tous les Actors
+    public function myFindByAll()
+    {
+        $queryBuilder = $this->_em->createQueryBuilder()
+            ->select('a')
+            ->from($this->_entityName, 'a')
+            ->orderBy('a.name', 'ASC');
+        $query = $queryBuilder->getQuery();
+        return $query->getResult();
+    }
+
+
 }

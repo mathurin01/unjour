@@ -1,4 +1,4 @@
 Hello:
-    path:     /hello
-    defaults: { _controller: QdUnjourBundle:Unjour:index }
+    path:     /hello/{page}
+    defaults: { _controller: QdUnjourBundle:Unjour:index, page: 1 }
 

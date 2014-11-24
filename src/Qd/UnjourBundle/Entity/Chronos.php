@@ -22,16 +22,16 @@ class Chronos
     private $id;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="startTime", type="datetime")
+     * @ORM\Column(name="startTime", type="date")
      */
     private $startTime;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="endTime", type="datetime")
+     * @ORM\Column(name="endTime", type="date")
      */
     private $endTime;
 
@@ -105,7 +105,7 @@ class Chronos
     /**
      * Set startTime
      *
-     * @param \DateTime $startTime
+     * @param \Date $startTime
      * @return Chronos
      */
     public function setStartTime($startTime)
@@ -118,7 +118,7 @@ class Chronos
     /**
      * Get startTime
      *
-     * @return \DateTime 
+     * @return \Date
      */
     public function getStartTime()
     {
@@ -128,7 +128,7 @@ class Chronos
     /**
      * Set endTime
      *
-     * @param \DateTime $endTime
+     * @param \Date $endTime
      * @return Chronos
      */
     public function setEndTime($endTime)
@@ -141,7 +141,7 @@ class Chronos
     /**
      * Get endTime
      *
-     * @return \DateTime 
+     * @return \Date
      */
     public function getEndTime()
     {
