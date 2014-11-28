@@ -71,9 +71,9 @@
             <p>
                 {% for f in facts %}
                     {{ f.startTime|date('d-m-Y') }}
-                        <i>({% for t in f.tags %}
-                            {{ t.nom }},
-                        {% endfor %})</i><br />
+                        <i>(
+                            {% for t in f.tags %}{{ t.nom }} {% endfor %}
+                            )</i><br />
                     {{ f.pres }}<br />
                 {% endfor %}
             </p>
@@ -94,7 +94,7 @@
                 {% for e in events %}
                     {{ e.startTime|date('d-m-Y') }} - {{ e.endTime|date('d-m-Y') }}
                     <i>({% for t in e.tags %}
-                        {{ t.nom }},
+                        {{ t.nom }}
                         {% endfor %})</i><br />
                     {{ e.pres }}<br />
                 {% endfor %}
