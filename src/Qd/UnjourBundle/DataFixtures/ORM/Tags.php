@@ -44,7 +44,13 @@ class Tag extends AbstractFixture implements OrderedFixtureInterface
 			'Révolution Russe',
 			'Chemin des Dames',
 			'Mutineries',
-            'Passchendaele (3ème bataille d\'Ypres)'
+            'Passchendaele (3ème bataille d\'Ypres)',
+            'Manche et mer du Nord',
+            'Méditérranée',
+            'Baltique',
+            'Atlantique',
+            'Mer Noire',
+            'Mer lointaines'
 		);
 		foreach($noms as $i => $nom)
 		{
