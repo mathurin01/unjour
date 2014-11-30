@@ -216,7 +216,7 @@ class FrontNewspaper extends AbstractFixture implements OrderedFixtureInterface
      */
     function getOrder()
     {
-        return 5;
+        return 6;
     }
 }
 

@@ -73,7 +73,7 @@
                     {{ f.startTime|date('d-m-Y') }}
                         <i>(
                             {% for t in f.tags %}{{ t.nom }} {% endfor %}
-                            )</i><br />
+                            )</i>(source {{ f.source.path1 }}) <br />
                     {{ f.pres }}<br />
                 {% endfor %}
             </p>
@@ -95,7 +95,7 @@
                     {{ e.startTime|date('d-m-Y') }} - {{ e.endTime|date('d-m-Y') }}
                     <i>({% for t in e.tags %}
                         {{ t.nom }}
-                        {% endfor %})</i><br />
+                        {% endfor %})</i>(source{{ f.sopurce.path1 }}) <br />
                     {{ e.pres }}<br />
                 {% endfor %}
             </p>

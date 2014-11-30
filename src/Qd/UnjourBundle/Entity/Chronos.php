@@ -59,7 +59,8 @@ class Chronos
     /**
      * @var string
      *
-     * @ORM\Column(name="source", type="text")
+     * @ORM\ManyToOne(targetEntity="Source", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
     private $source;
 
@@ -220,7 +221,7 @@ class Chronos
     /**
      * Set source
      *
-     * @param string $source
+     * @param Source $source
      * @return Chronos
      */
     public function setSource($source)
@@ -233,7 +234,7 @@ class Chronos
     /**
      * Get source
      *
-     * @return string 
+     * @return Source
      */
     public function getSource()
     {

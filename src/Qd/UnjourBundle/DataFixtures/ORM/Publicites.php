@@ -85,7 +85,7 @@ class Publicite extends AbstractFixture implements OrderedFixtureInterface
      */
     function getOrder()
     {
-        return 7;
+        return 8;
     }
 }
 

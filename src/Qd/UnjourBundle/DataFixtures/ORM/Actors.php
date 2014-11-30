@@ -61,7 +61,7 @@ class Actor extends AbstractFixture implements OrderedFixtureInterface
      */
     function getOrder()
     {
-        return 8;
+        return 9;
     }
 }
 

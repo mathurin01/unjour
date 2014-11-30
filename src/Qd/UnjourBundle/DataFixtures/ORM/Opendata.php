@@ -315,7 +315,7 @@ class OpenDatas extends AbstractFixture implements OrderedFixtureInterface
      */
     function getOrder()
     {
-        return 6;
+        return 7;
     }
 }
 

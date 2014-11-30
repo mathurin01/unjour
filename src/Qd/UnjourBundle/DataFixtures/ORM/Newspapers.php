@@ -74,7 +74,7 @@ class Newspaper extends AbstractFixture implements OrderedFixtureInterface
      */
     function getOrder()
     {
-        return 3;
+        return 4;
     }
 }
 
