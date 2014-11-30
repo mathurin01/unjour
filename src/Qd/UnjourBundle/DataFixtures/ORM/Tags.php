@@ -19,7 +19,7 @@ class Tag extends AbstractFixture implements OrderedFixtureInterface
 			'Front de l\'ouest', 
 			'Front de l\'est', 
 			'Italie', 
-			'Moye-Orient',
+			'Moyen-Orient',
 			'Balkans',
 			'Afrique',
 			'Marine',
@@ -35,7 +35,22 @@ class Tag extends AbstractFixture implements OrderedFixtureInterface
 			'Lieux',
 			'Anecdotes',
 			'Artillerie',
-			'Innovations'
+			'Innovations',
+			'Guerre de mouvement',
+			'Course à la mer',
+			'Guerre des gaz',
+			'Verdun',
+			'Somme',
+			'Révolution Russe',
+			'Chemin des Dames',
+			'Mutineries',
+            'Passchendaele (3ème bataille d\'Ypres)',
+            'Manche et mer du Nord',
+            'Méditérranée',
+            'Baltique',
+            'Atlantique',
+            'Mer Noire',
+            'Mer lointaines'
 		);
 		foreach($noms as $i => $nom)
 		{

@@ -52,7 +52,7 @@ class ChronosRepository extends EntityRepository
         $queryBuilder = $this->_em->createQueryBuilder()
             ->select('c')
             ->from($this->_entityName, 'c')
-            ->where('c.startTime != 0000-00-00')
+            ->where('c.endTime != 0000-00-00')
             ->orderBy('c.endTime', 'ASC');
         $query = $queryBuilder->getQuery();
         $query->setFirstResult(($page-1) * $nbParPage)->setMaxResults($nbParPage);
@@ -76,5 +76,9 @@ class ChronosRepository extends EntityRepository
         return $query->getResult();
     }
 
+    public function myFindByTags(Tags $tags)
+    {
+
+    }
 
 }
