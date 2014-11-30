@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Actors.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/DataFixtures/ORM/Actors.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Actors.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Actors.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/ActorsRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/ActorsRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Books.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Books.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/BooksRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/BooksRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chronos.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Chronos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/ChronosRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/ChronosRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapers.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapersRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/FrontNewspapersRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/OpendataRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/OpendataRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Publicites.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/PublicitesRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/PublicitesRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Controller/UnjourController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visitors.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/Visitors.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisitorsRepository.php" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Entity/VisitorsRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/views/Unjour/index.html.twig" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/views/Unjour/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Qd/UnjourBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/unjour.iml" afterPath="$PROJECT_DIR$/.idea/unjour.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="88466ffb-cb2a-4e00-9e79-324fdce80afe" name="Default" comment="" />
     <ignored path="unjour.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -360,7 +339,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5869099" sideWeight="0.6704036" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2414163" sideWeight="0.6704036" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
