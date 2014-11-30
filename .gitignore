@@ -37,3 +37,4 @@
 .idea/
 
 /src/Qd/UnjourBundle/Entity/*.php~
+.idea
