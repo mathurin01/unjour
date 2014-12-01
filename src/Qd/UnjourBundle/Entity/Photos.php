@@ -51,6 +51,20 @@ class Photos
 
 
     /**
+     * @var integer
+     *
+     * @ORM\ManyToMany(targetEntity="Tags", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $tags;
+
+    public function __construct()
+    {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
      * Get id
      *
      * @return integer 
@@ -150,5 +164,38 @@ class Photos
     public function getLienUrl()
     {
         return $this->lienUrl;
+    }
+
+    /**
+     * Add tags
+     *
+     * @param \Qd\UnjourBundle\Entity\Tags $tags
+     * @return Photos
+     */
+    public function addTag(\Qd\UnjourBundle\Entity\Tags $tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Remove tags
+     *
+     * @param Tags $tags
+     */
+    public function removeTag(Tags $tags)
+    {
+        $this->tags->removeElement($tags);
+    }
+
+    /**
+     * Get tags
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTags()
+    {
+        return $this->tags;
     }
 }

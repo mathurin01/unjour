@@ -75,7 +75,7 @@ class Tag extends AbstractFixture implements OrderedFixtureInterface
      */
     function getOrder()
     {
-        return 2;
+        return 1;
     }
 }
 
