@@ -404,7 +404,7 @@ class Chrono extends AbstractFixture implements OrderedFixtureInterface
             1204 => array('1915-04-28', '0000-00-00', 'Première réunion de la Commission sur l’emploi des gaz, dirigée par le général Curmer, réunissant des officiers et des savants. Remplacée en juin par une commission dite des Etudes chimiques de guerre, dirigée par le professeur André Kling.', array(23), 9),
             1205 => array('1915-05-01', '1915-05-20', 'Plusieurs attaques aux gaz se poursuivent durant le mois, provoquant des pertes dans les deux camps.', array(23), 9),
             1206 => array('1915-05-18', '0000-00-00', 'Le gouvernement britannique ordonne la riposte au gaz contre l’armée allemande.', array(23), 9),
-            1207 => array('1915-05-15', '0000-06-30', 'Distribution des compresses C1.', array(23), 9),
+            1207 => array('1915-05-15', '0000-00-00', 'Distribution des compresses C1.', array(23), 9),
             1208 => array('1915-05-08', '0000-00-00', 'Les troupes britanniques reçoivent plus de 250 000 compresses de protection commandées par Lord Kitchener.', array(23), 9),
             1209 => array('1915-06-12', '0000-00-00', 'Elaboration du premier obus français à suffocant au tétrachlosulfure de carbone. Utilisé à titre expérimental en Argonne, il est employé en Champagne en septembre 1915. Mais la faible contenance de l’obus de 75 mm ne permet pas de saturer l’air de gaz, ne produisant pas d’effet majeur sur la santé des soldats allemands.', array(1,23), 9),
             1210 => array('1915-06-20', '0000-00-00', 'En Argonne, dans le bois de La Gruerie, utilisation massive de l’obus chimique par les troupes allemandes.', array(1,23), 9),

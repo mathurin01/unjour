@@ -76,9 +76,16 @@ class ChronosRepository extends EntityRepository
         return $query->getResult();
     }
 
-    public function myFindByTags(Tags $tags)
+    public function myFindByTags($id)
     {
+        $query = $this->createQueryBuilder('c')
+            ->join('c.tags', 't')
+            ->addSelect('t')
+            ->where('t.id = :id')
+            ->setParameter("id", $id);
 
+        $query = $query->getQuery();
+        return $query->getResult();
     }
 
 }

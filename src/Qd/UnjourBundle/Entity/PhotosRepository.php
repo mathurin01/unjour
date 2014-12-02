@@ -17,4 +17,16 @@ class PhotosRepository extends EntityRepository
      *
      * prévoir (éventuellement) la mise en place d'une page photo avec, à l'intérieur celle de l'Opendata
      */
+
+    public function myFindByTags($id)
+    {
+        $qb = $this->createQueryBuilder('p')
+            ->join('p.tags', 't')
+            ->addSelect('t')
+            ->where('t.id = :id')
+            ->setParameter("id", $id);
+
+        $query = $qb->getQuery();
+        return $query->getResult();
+    }
 }

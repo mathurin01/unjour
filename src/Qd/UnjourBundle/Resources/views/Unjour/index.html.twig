@@ -7,6 +7,27 @@
 	<body>
     -----------------------------------------------
 
+    <h2>Tags</h2>
+    {% for t in tags %}
+        {{ t.nom }} -
+    {% endfor %}
+    -----------------------------------------------
+
+    <h2>Photos de Marine</h2>
+    {% for m in marine %}
+        {{ m.startTime|date('d-m-Y') }} - ({% for t in m.tags %}{{ t.nom }} {% endfor %})<br />
+        {{ m.descr }}<br />
+    {% endfor %}
+    -----------------------------------------------
+
+    <h2>Guerre des gaz (photos)</h2>
+    {% for g in gaz %}
+        {{ g.legende }} <br />
+        <img src="{{ asset('bundles/qdunjour/images/'~g.path) }}">
+    {% endfor %}
+
+    -----------------------------------------------
+
     <h2>Visitors</h2>
         <h3>Nb de clic</h3>
             <p>
@@ -95,7 +116,7 @@
                     {{ e.startTime|date('d-m-Y') }} - {{ e.endTime|date('d-m-Y') }}
                     <i>({% for t in e.tags %}
                         {{ t.nom }}
-                        {% endfor %})</i>(source{{ f.sopurce.path1 }}) <br />
+                        {% endfor %})</i>(source{{ e.source.path1 }}) <br />
                     {{ e.pres }}<br />
                 {% endfor %}
             </p>
