@@ -30,7 +30,9 @@ class ChronosRepository extends EntityRepository
     public function myFindByFacts($nbParPage, $page)
     {
         if ($page < 1) {
-            throw new \InvalidArgumentException('L\'argument $page ne peut être inférieur à 1 (valeur : "'.$page.'").');
+            throw new \InvalidArgumentException(
+                'L\'argument $page ne peut être inférieur à 1 (valeur : "'.$page.'").'
+            );
         }
 
         $queryBuilder = $this->_em->createQueryBuilder()
@@ -46,7 +48,9 @@ class ChronosRepository extends EntityRepository
     public function myFindByEvents($nbParPage, $page)
     {
         if ($page < 1) {
-            throw new \InvalidArgumentException('L\'argument $page ne peut être inférieur à 1 (valeur : "'.$page.'").');
+            throw new \InvalidArgumentException(
+                'L\'argument $page ne peut être inférieur à 1 (valeur : "'.$page.'").'
+            );
         }
 
         $queryBuilder = $this->_em->createQueryBuilder()
@@ -85,7 +89,7 @@ class ChronosRepository extends EntityRepository
             ->setParameter("id", $id);
 
         $query = $query->getQuery();
+
         return $query->getResult();
     }
-
 }

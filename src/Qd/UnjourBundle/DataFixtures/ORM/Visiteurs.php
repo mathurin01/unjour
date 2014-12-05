@@ -979,8 +979,9 @@ class Visitor extends AbstractFixture implements OrderedFixtureInterface
             962 => array( '128.30.52.73', '2014-11-07 05:12:23', '0000-00-00 00:00:00')
         );
 
-        $j = 1;$k = 1;
-        foreach($mytab as $i => $tab)
+        $j = 1;
+        $k = 1;
+        foreach ($mytab as $i => $tab)
         {
             $visit[$i] = new Visitors();
             $visit[$i]->setAdrip($tab[0]);
@@ -988,15 +989,16 @@ class Visitor extends AbstractFixture implements OrderedFixtureInterface
             $visit[$i]->setLastcon(new \DateTime($tab[2]));
             $visit[$i]->setNb($k);
 
-            if($j == 10){
+            if ($j == 10) {
                 $j = 1;
                 $k = 1;
             } else {
-                if($j > 8) {
+                if ($j > 8) {
                     $k = 3;
                 } else {
-                    if ($j > 5)
+                    if ($j > 5) {
                         $k = 2;
+                    }
                 }
             }
             $j++;
@@ -1012,11 +1014,8 @@ class Visitor extends AbstractFixture implements OrderedFixtureInterface
      *
      * @return integer
      */
-    function getOrder()
+    public function getOrder()
     {
         return 5;
     }
 }
-
-
-

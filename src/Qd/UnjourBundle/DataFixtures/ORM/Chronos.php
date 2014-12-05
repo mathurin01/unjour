@@ -562,7 +562,7 @@ class Chrono extends AbstractFixture implements OrderedFixtureInterface
             1426 => array('1917-07-12', '0000-00-00', 'Le cuirassé japonais Kawashi est détruit par explosion d\'une soute à munition dans la baie de Tokuyama', array(7,35), 8)
             );
 
-        foreach($mytab as $i => $tab)
+        foreach ($mytab as $i => $tab)
         {
             $chrono = new Chronos();
             $chrono->setStartTime(new \DateTime($tab[0]));
@@ -570,26 +570,21 @@ class Chrono extends AbstractFixture implements OrderedFixtureInterface
             $chrono->setDescr($tab[2]);
             $chrono->setPres($tab[2]);
             $chrono->setBilan("indefini");
-            if($tab[3]){
-                foreach($tab[3] as $i => $t){
+            if ($tab[3])
+            {
+                foreach ($tab[3] as $i => $t)
+                {
                     $chrono->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($t));
                 }
             }
-            if($tab[4]){
+            if ($tab[4])
+            {
                 $chrono->setSource($manager->getRepository('QdUnjourBundle:Source')->find($tab[4]));
             }
 
             $chrono->setActors(null);
             $chrono->setphotos($manager->getRepository('QdUnjourBundle:Photos')->find(1));
-            /*
-            $jj=1;
-            for($ii = 0; $ii < 3; $ii++){
-                $chrono->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-                if($jj == 20){
-                    $jj = 1;
-                }else
-                    $jj++;
-            }*/
+
 
             $manager->persist($chrono);
         }
@@ -601,11 +596,8 @@ class Chrono extends AbstractFixture implements OrderedFixtureInterface
      *
      * @return integer
      */
-    function getOrder()
+    public function getOrder()
     {
         return 11;
     }
 }
-
-
-

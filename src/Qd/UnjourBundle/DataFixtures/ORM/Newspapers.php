@@ -55,7 +55,7 @@ class Newspaper extends AbstractFixture implements OrderedFixtureInterface
             'titrejournaux/Le_Temps.jpg',
             'titrejournaux/La_Lanterne.jpg'
         );
-        foreach($noms as $i => $nom)
+        foreach ($noms as $i => $nom)
         {
             $listejournaux = new Newspapers();
             $listejournaux->setName($nom);
@@ -72,11 +72,8 @@ class Newspaper extends AbstractFixture implements OrderedFixtureInterface
      *
      * @return integer
      */
-    function getOrder()
+    public function getOrder()
     {
         return 4;
     }
 }
-
-
-

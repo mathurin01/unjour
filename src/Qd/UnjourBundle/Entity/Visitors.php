@@ -12,7 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Visitors
 {
-    public function __construct(){
+    public function __construct()
+    {
         $this->setFirstCon(new \DateTime('now'));
         $this->setLastCon(new \DateTime('0000-00-00 00:00:00'));
         $this->setNb(1);
@@ -59,7 +60,7 @@ class Visitors
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -83,7 +84,7 @@ class Visitors
     /**
      * Get adrIp
      *
-     * @return integer 
+     * @return integer
      */
     public function getAdrIp()
     {
@@ -106,7 +107,7 @@ class Visitors
     /**
      * Get firstCon
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getFirstCon()
     {
@@ -129,7 +130,7 @@ class Visitors
     /**
      * Get lastCon
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getLastCon()
     {
@@ -152,7 +153,7 @@ class Visitors
     /**
      * Get nb
      *
-     * @return integer 
+     * @return integer
      */
     public function getNb()
     {

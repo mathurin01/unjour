@@ -73,7 +73,7 @@ class FrontNewspapers
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -142,7 +142,7 @@ class FrontNewspapers
     /**
      * Get path
      *
-     * @return string 
+     * @return string
      */
     public function getPath()
     {
@@ -165,7 +165,7 @@ class FrontNewspapers
     /**
      * Get permalien
      *
-     * @return string 
+     * @return string
      */
     public function getPermalien()
     {
@@ -188,7 +188,7 @@ class FrontNewspapers
     /**
      * Get vignetteExport
      *
-     * @return string 
+     * @return string
      */
     public function getVignetteExport()
     {

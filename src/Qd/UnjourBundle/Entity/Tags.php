@@ -46,7 +46,7 @@ class Tags
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -69,7 +69,7 @@ class Tags
     /**
      * Get nom
      *
-     * @return string 
+     * @return string
      */
     public function getNom()
     {
@@ -92,7 +92,7 @@ class Tags
     /**
      * Get logo
      *
-     * @return string 
+     * @return string
      */
     public function getLogo()
     {
@@ -115,7 +115,7 @@ class Tags
     /**
      * Get indice
      *
-     * @return integer 
+     * @return integer
      */
     public function getIndice()
     {

@@ -10,7 +10,7 @@ use Qd\UnjourBundle\Entity\Publicites;
 
 class Publicite extends AbstractFixture implements OrderedFixtureInterface
 {
-// Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
+    // Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
     public function load(ObjectManager $manager)
     {
         $pub1 = new Publicites();
@@ -18,12 +18,13 @@ class Publicite extends AbstractFixture implements OrderedFixtureInterface
         $pub1->setDcreat(new \DateTime("1914-12-24"));
         $pub1->setPath("pubs/Quinquina.jpg");
         $jj=1;
-        for($ii = 0; $ii < 2; $ii++){
+        for ($ii = 0; $ii < 2; $ii++) {
             $pub1->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
 
         $pub2 = new Publicites();
@@ -31,12 +32,13 @@ class Publicite extends AbstractFixture implements OrderedFixtureInterface
         $pub2->setDcreat(new \DateTime("1914-08-31"));
         $pub2->setPath("pubs/Cycle_Robert.jpg");
         $jj=1;
-        for($ii = 0; $ii < 3; $ii++){
+        for ($ii = 0; $ii < 3; $ii++) {
             $pub2->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
 
         $pub3 = new Publicites();
@@ -44,12 +46,13 @@ class Publicite extends AbstractFixture implements OrderedFixtureInterface
         $pub3->setDcreat(new \DateTime("1914-08-01"));
         $pub3->setPath("pubs/Riz_la_croix.jpg");
         $jj=1;
-        for($ii = 0; $ii < 2; $ii++){
+        for ($ii = 0; $ii < 2; $ii++) {
             $pub3->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
 
         $pub4 = new Publicites();
@@ -57,22 +60,20 @@ class Publicite extends AbstractFixture implements OrderedFixtureInterface
         $pub4->setDcreat(new \DateTime("1914-09-05"));
         $pub4->setPath("pubs/Zig_zag.jpg");
         $jj=1;
-        for($ii = 0; $ii < 4; $ii++){
+        for ($ii = 0; $ii < 4; $ii++) {
             $pub4->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
-
-
 
         // On la persiste
         $manager->persist($pub1);
         $manager->persist($pub2);
         $manager->persist($pub3);
         $manager->persist($pub4);
-
 
         // On déclenche l'enregistrement
         $manager->flush();
@@ -83,9 +84,8 @@ class Publicite extends AbstractFixture implements OrderedFixtureInterface
      *
      * @return integer
      */
-    function getOrder()
+    public function getOrder()
     {
         return 8;
     }
 }
-

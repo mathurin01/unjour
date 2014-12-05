@@ -46,7 +46,7 @@ class Newspapers
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -69,7 +69,7 @@ class Newspapers
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -92,7 +92,7 @@ class Newspapers
     /**
      * Get descr
      *
-     * @return string 
+     * @return string
      */
     public function getDescr()
     {
@@ -115,7 +115,7 @@ class Newspapers
     /**
      * Get path
      *
-     * @return string 
+     * @return string
      */
     public function getPath()
     {

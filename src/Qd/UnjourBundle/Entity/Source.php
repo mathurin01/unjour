@@ -67,7 +67,7 @@ class Source
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -90,7 +90,7 @@ class Source
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -136,7 +136,7 @@ class Source
     /**
      * Get path1
      *
-     * @return string 
+     * @return string
      */
     public function getPath1()
     {
@@ -159,7 +159,7 @@ class Source
     /**
      * Get path2
      *
-     * @return string 
+     * @return string
      */
     public function getPath2()
     {
@@ -182,7 +182,7 @@ class Source
     /**
      * Get auteur
      *
-     * @return string 
+     * @return string
      */
     public function getAuteur()
     {
@@ -205,7 +205,7 @@ class Source
     /**
      * Get logo
      *
-     * @return string 
+     * @return string
      */
     public function getLogo()
     {

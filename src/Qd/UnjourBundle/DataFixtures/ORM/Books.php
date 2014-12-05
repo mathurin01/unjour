@@ -22,12 +22,13 @@ Cette annonce, à ma grande stupeur souleva plus d'enthousiasme que de désolati
         $carnet1->setThanks("Remerciement aux éditions machins");
         $carnet1->setActors($manager->getRepository('QdUnjourBundle:Actors')->find(2));
         $jj=1;
-        for($ii = 0; $ii < 3; $ii++){
+        for ($ii = 0; $ii < 3; $ii++) {
             $carnet1->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
         $carnet1->setPhotos($manager->getRepository('QdUnjourBundle:Photos')->find(5));
 
@@ -40,12 +41,13 @@ Les gendarmes, prévenus de l’impossibilité de mon départ ne voulurent rien 
         $carnet2->setThanks("Remerciement aux éditions machins");
         $carnet2->setActors($manager->getRepository('QdUnjourBundle:Actors')->find(2));
         $jj=1;
-        for($ii = 0; $ii < 3; $ii++){
+        for ($ii = 0; $ii < 3; $ii++) {
             $carnet2->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
         $carnet2->setPhotos($manager->getRepository('QdUnjourBundle:Photos')->find(5));
 
@@ -58,12 +60,13 @@ Ce fut à Barlin où j'entendis pour la première fois le bruit du canon du fron
         $carnet3->setThanks("Remerciement aux éditions machins");
         $carnet3->setActors($manager->getRepository('QdUnjourBundle:Actors')->find(2));
         $jj=1;
-        for($ii = 0; $ii < 3; $ii++){
+        for ($ii = 0; $ii < 3; $ii++) {
             $carnet3->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
         $carnet3->setPhotos($manager->getRepository('QdUnjourBundle:Photos')->find(5));
 
@@ -73,12 +76,13 @@ Ce fut à Barlin où j'entendis pour la première fois le bruit du canon du fron
         $carnet4->setThanks("Remerciement aux éditions machins");
         $carnet4->setActors($manager->getRepository('QdUnjourBundle:Actors')->find(2));
         $jj=1;
-        for($ii = 0; $ii < 3; $ii++){
+        for ($ii = 0; $ii < 3; $ii++) {
             $carnet4->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
         $carnet4->setPhotos($manager->getRepository('QdUnjourBundle:Photos')->find(5));
 
@@ -93,12 +97,13 @@ C'était un simple rectifications de leurs lignes, mais nos gros galonnés entho
         $carnet5->setThanks("Remerciement aux éditions machins");
         $carnet5->setActors($manager->getRepository('QdUnjourBundle:Actors')->find(2));
         $jj=1;
-        for($ii = 0; $ii < 3; $ii++){
+        for ($ii = 0; $ii < 3; $ii++) {
             $carnet5->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-            if($jj == 20){
+            if ($jj == 20) {
                 $jj = 1;
-            }else
+            } else {
                 $jj++;
+            }
         }
         $carnet5->setPhotos($manager->getRepository('QdUnjourBundle:Photos')->find(5));
 
@@ -116,11 +121,8 @@ C'était un simple rectifications de leurs lignes, mais nos gros galonnés entho
      *
      * @return integer
      */
-    function getOrder()
+    public function getOrder()
     {
         return 10;
     }
 }
-
-
-

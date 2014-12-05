@@ -96,7 +96,7 @@ class Chronos
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -165,7 +165,7 @@ class Chronos
     /**
      * Get descr
      *
-     * @return string 
+     * @return string
      */
     public function getDescr()
     {
@@ -188,7 +188,7 @@ class Chronos
     /**
      * Get pres
      *
-     * @return string 
+     * @return string
      */
     public function getPres()
     {
@@ -211,7 +211,7 @@ class Chronos
     /**
      * Get bilan
      *
-     * @return string 
+     * @return string
      */
     public function getBilan()
     {

@@ -25,7 +25,18 @@ class OpendataRepository extends EntityRepository
     public function myFindByAll()
     {
         $queryBuilder = $this->_em->createQueryBuilder()
-            ->select('o.pays', 'o.reg', 'o.edif', 'o.leg', 'o.obj', 'o.lieucor', 'o.autoeu', 'o.dpt', 'o.autp', 'o.serie')
+            ->select(
+                'o.pays',
+                'o.reg',
+                'o.edif',
+                'o.leg',
+                'o.obj',
+                'o.lieucor',
+                'o.autoeu',
+                'o.dpt',
+                'o.autp',
+                'o.serie'
+            )
             ->from($this->_entityName, 'o');
 
         $query = $queryBuilder->getQuery()->setMaxResults(200);

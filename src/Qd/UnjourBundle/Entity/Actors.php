@@ -89,7 +89,7 @@ class Actors
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -112,7 +112,7 @@ class Actors
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -135,7 +135,7 @@ class Actors
     /**
      * Get firstname
      *
-     * @return string 
+     * @return string
      */
     public function getFirstname()
     {
@@ -204,7 +204,7 @@ class Actors
     /**
      * Get pres
      *
-     * @return string 
+     * @return string
      */
     public function getPres()
     {
@@ -227,7 +227,7 @@ class Actors
     /**
      * Get descr
      *
-     * @return string 
+     * @return string
      */
     public function getDescr()
     {

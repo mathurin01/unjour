@@ -67,7 +67,7 @@ class Photos
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -90,7 +90,7 @@ class Photos
     /**
      * Get legende
      *
-     * @return string 
+     * @return string
      */
     public function getLegende()
     {
@@ -113,7 +113,7 @@ class Photos
     /**
      * Get path
      *
-     * @return string 
+     * @return string
      */
     public function getPath()
     {
@@ -136,7 +136,7 @@ class Photos
     /**
      * Get source
      *
-     * @return string 
+     * @return string
      */
     public function getSource()
     {
@@ -159,7 +159,7 @@ class Photos
     /**
      * Get lienUrl
      *
-     * @return string 
+     * @return string
      */
     public function getLienUrl()
     {
@@ -192,7 +192,7 @@ class Photos
     /**
      * Get tags
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getTags()
     {

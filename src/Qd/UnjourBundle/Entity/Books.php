@@ -75,7 +75,7 @@ class Books
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -121,7 +121,7 @@ class Books
     /**
      * Get texte
      *
-     * @return string 
+     * @return string
      */
     public function getTexte()
     {
@@ -144,7 +144,7 @@ class Books
     /**
      * Get thanks
      *
-     * @return string 
+     * @return string
      */
     public function getThanks()
     {

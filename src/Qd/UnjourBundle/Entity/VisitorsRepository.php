@@ -96,7 +96,4 @@ class VisitorsRepository extends EntityRepository
         $query = $queryBuilder->getQuery();
         return $query->getResult();
     }
-
-
-
 }

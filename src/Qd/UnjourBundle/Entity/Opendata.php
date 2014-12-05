@@ -199,7 +199,7 @@ class Opendata
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -222,7 +222,7 @@ class Opendata
     /**
      * Get ref
      *
-     * @return string 
+     * @return string
      */
     public function getRef()
     {
@@ -245,7 +245,7 @@ class Opendata
     /**
      * Get nump
      *
-     * @return string 
+     * @return string
      */
     public function getNump()
     {
@@ -268,7 +268,7 @@ class Opendata
     /**
      * Get pays
      *
-     * @return string 
+     * @return string
      */
     public function getPays()
     {
@@ -291,7 +291,7 @@ class Opendata
     /**
      * Get reg
      *
-     * @return string 
+     * @return string
      */
     public function getReg()
     {
@@ -314,7 +314,7 @@ class Opendata
     /**
      * Get dpt
      *
-     * @return string 
+     * @return string
      */
     public function getDpt()
     {
@@ -337,7 +337,7 @@ class Opendata
     /**
      * Get com
      *
-     * @return string 
+     * @return string
      */
     public function getCom()
     {
@@ -360,7 +360,7 @@ class Opendata
     /**
      * Get insee
      *
-     * @return string 
+     * @return string
      */
     public function getInsee()
     {
@@ -383,7 +383,7 @@ class Opendata
     /**
      * Get edif
      *
-     * @return string 
+     * @return string
      */
     public function getEdif()
     {
@@ -406,7 +406,7 @@ class Opendata
     /**
      * Get adresse
      *
-     * @return string 
+     * @return string
      */
     public function getAdresse()
     {
@@ -429,7 +429,7 @@ class Opendata
     /**
      * Get leg
      *
-     * @return string 
+     * @return string
      */
     public function getLeg()
     {
@@ -452,7 +452,7 @@ class Opendata
     /**
      * Get obj
      *
-     * @return string 
+     * @return string
      */
     public function getObj()
     {
@@ -475,7 +475,7 @@ class Opendata
     /**
      * Get lieucor
      *
-     * @return string 
+     * @return string
      */
     public function getLieucor()
     {
@@ -498,7 +498,7 @@ class Opendata
     /**
      * Get autp
      *
-     * @return string 
+     * @return string
      */
     public function getAutp()
     {
@@ -521,7 +521,7 @@ class Opendata
     /**
      * Get autoeu
      *
-     * @return string 
+     * @return string
      */
     public function getAutoeu()
     {
@@ -544,7 +544,7 @@ class Opendata
     /**
      * Get scle
      *
-     * @return string 
+     * @return string
      */
     public function getScle()
     {
@@ -567,7 +567,7 @@ class Opendata
     /**
      * Get datepv
      *
-     * @return string 
+     * @return string
      */
     public function getDatepv()
     {
@@ -590,7 +590,7 @@ class Opendata
     /**
      * Get serie
      *
-     * @return string 
+     * @return string
      */
     public function getSerie()
     {
@@ -613,7 +613,7 @@ class Opendata
     /**
      * Get typdoc
      *
-     * @return string 
+     * @return string
      */
     public function getTypdoc()
     {
@@ -636,7 +636,7 @@ class Opendata
     /**
      * Get lbase
      *
-     * @return string 
+     * @return string
      */
     public function getLbase()
     {
@@ -659,7 +659,7 @@ class Opendata
     /**
      * Get copy
      *
-     * @return string 
+     * @return string
      */
     public function getCopy()
     {
@@ -682,7 +682,7 @@ class Opendata
     /**
      * Get videov
      *
-     * @return string 
+     * @return string
      */
     public function getVideov()
     {
@@ -705,7 +705,7 @@ class Opendata
     /**
      * Get videop
      *
-     * @return string 
+     * @return string
      */
     public function getVideop()
     {
@@ -728,7 +728,7 @@ class Opendata
     /**
      * Get dateqd
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDateqd()
     {

@@ -10,8 +10,11 @@ module.exports = function(grunt){
                 dir: ['src']
             },
             options: {
-                bin: 'C:/xampp/php/phpcs',
-                standard: 'PSR2'
+                bin: '/usr/bin/phpcs',
+                standard: 'PSR2',
+                ignore: [
+                    'src/Qd/UnjourBundle/DataFixtures/ORM/*.php'
+                ]
             }
         },
 
@@ -31,5 +34,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-phpcs');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    grunt.registerTask('default', ['jshint', 'imagemin']);
+    grunt.registerTask('default', ['jshint', 'phpcs']);
 }

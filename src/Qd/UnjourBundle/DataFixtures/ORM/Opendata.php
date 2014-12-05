@@ -11,7 +11,7 @@ use Qd\UnjourBundle\Entity\OpenData;
 
 class OpenDatas extends AbstractFixture implements OrderedFixtureInterface
 {
-// Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
+     // Dans l'argument de la méthode load, l'objet $manager est l'EntityManager
     public function load(ObjectManager $manager)
     {
         $mytab = array(
@@ -267,7 +267,7 @@ class OpenDatas extends AbstractFixture implements OrderedFixtureInterface
             9735 => array ('APD0000233A         ', 'indefini', 'France', 'Alsace', '68', 'Thann', '68334', 'Cathédrale', 'indefini', 'Maisons détruites et la cathédrale au fond', 'indefini', 'indefini', 'Opérateur D ; Brissy, Edouard', 'indefini', 'indefini', '1915-06-24', 'indefini', 'Positif original', 'IA00024314', 'Ministère de la Culture (France) - Médiathèque de l\'Architecture et du Patrimoine - Diffusion RMN', 'http://www.culture.gouv.fr/Wave/image/memoire/1596/sap40_d0000233a_v.jpg', 'http://www.culture.gouv.fr/Wave/image/memoire/1596/sap40_d0000233a_p.jpg', '1915-06-24', '0000-00-00 00:00:00', '2013-12-23 13:53:19')
         );
 
-        foreach($mytab as $i => $tab)
+        foreach ($mytab as $i => $tab)
         {
             $open = new OpenData();
             $open->setRef($tab[0]);
@@ -294,12 +294,13 @@ class OpenDatas extends AbstractFixture implements OrderedFixtureInterface
             $open->setVideop($tab[21]);
             $open->setDateqd(new \DateTime($tab[15]));
             $jj=1;
-            for($ii = 0; $ii < 3; $ii++){
+            for ($ii = 0; $ii < 3; $ii++) {
                 $open->addTag($manager->getRepository('QdUnjourBundle:Tags')->find($jj));
-                if($jj == 20){
+                if ($jj == 20) {
                     $jj = 1;
-                }else
+                } else {
                     $jj++;
+                }
             }
 
             $manager->persist($open);
@@ -313,11 +314,8 @@ class OpenDatas extends AbstractFixture implements OrderedFixtureInterface
      *
      * @return integer
      */
-    function getOrder()
+    public function getOrder()
     {
         return 7;
     }
 }
-
-
-
