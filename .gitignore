@@ -38,3 +38,7 @@
 
 /src/Qd/UnjourBundle/Entity/*.php~
 .idea
+
+# grunt
+node_modules
+package.json
