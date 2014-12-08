@@ -31,7 +31,7 @@ class Visitors
     /**
      * @var integer
      *
-     * @ORM\Column(name="adrip", type="integer")
+     * @ORM\Column(name="adrip", type="integer", options={"unsigned":true})
      */
     private $adrIp;
 
