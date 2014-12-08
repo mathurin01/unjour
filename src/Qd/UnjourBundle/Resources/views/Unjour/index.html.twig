@@ -7,6 +7,12 @@
 	<body>
     -----------------------------------------------
 
+    <h2>Visitors - Statistics</h2>
+    {% for tab in tabvisitors %}
+        {{ tab['ip'] }}   |  {{ tab['pays'] }} |  {{ tab['cp'] }}  |  {{ tab['ville'] }}<br />
+    {% endfor %}
+    -----------------------------------------------
+
     <h2>Tags</h2>
     {% for t in tags %}
         {{ t.nom }} -

@@ -7,12 +7,13 @@ use Qd\UnjourBundle\Entity\ListeJournaux;
 use Qd\UnjourBundle\Entity\Tags;
 use Qd\UnjourBundle\Entity\UnesJournaux;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 
 class UnjourController extends Controller
 {
     public function indexAction($page)
     {
+        include("/var/www/html/unjour/src/Qd/Statistics/php-1.11/geoipcity.inc");
+        include "/var/www/html/unjour/src/Qd/Statistics/php-1.11/geoipregionvars.php";
         $pubs = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Publicites')->myFindByAll();
         $actors = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Actors')->myFindByAll();
         $books = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Books')->myFindByBooks();
@@ -41,6 +42,26 @@ class UnjourController extends Controller
         $marine = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Chronos')->myFindByTags(7);
         $gaz = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Photos')->myFindByTags(23);
 
+        $gi = geoip_open(realpath("/var/www/html/unjour/src/Qd/Statistics/GeoLiteCity.dat"), GEOIP_STANDARD);
+        $visitors = $this->getDoctrine()->getManager()
+            ->getRepository('QdUnjourBundle:Visitors')->findAll();
+        $tabvisitors = array();
+        $i = 0;
+        foreach ($visitors as $visitor) {
+            if ($visitor->getId()<>1 and $visitor->getAdrip()<>'127.255.255.255') {
+                //$record = new \GeoIP();
+                if ($record = geoip_record_by_addr($gi, $visitor->getAdrip())) {
+                //var_dump($record->country_name);
+
+                $tabvisitors[$i]['ip'] = $visitor->getAdrip();
+                $tabvisitors[$i]['pays'] = utf8_encode($record->country_name);
+                $tabvisitors[$i]['cp'] = $record->postal_code;
+                $tabvisitors[$i]['ville'] = utf8_encode($record->city);
+                $i++;
+                }
+            }
+        }
+
         return $this->render(
             'QdUnjourBundle:Unjour:index.html.twig',
             array(
@@ -62,6 +83,7 @@ class UnjourController extends Controller
                 'tags'          => $tags,
                 'marine'        => $marine,
                 'gaz'           => $gaz,
+                'tabvisitors'   => $tabvisitors,
             )
         );
     }
