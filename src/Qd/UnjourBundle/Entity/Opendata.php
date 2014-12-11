@@ -31,154 +31,154 @@ class Opendata
     /**
      * @var string
      *
-     * @ORM\Column(name="nump", type="string", length=255)
+     * @ORM\Column(name="nump", type="string", length=255, nullable=true)
      */
     private $nump;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pays", type="string", length=255)
+     * @ORM\Column(name="pays", type="string", length=255, nullable=true)
      */
     private $pays;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="reg", type="string", length=255)
+     * @ORM\Column(name="reg", type="string", length=255, nullable=true)
      */
     private $reg;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dpt", type="string", length=255)
+     * @ORM\Column(name="dpt", type="string", length=255, nullable=true)
      */
     private $dpt;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="com", type="string", length=255)
+     * @ORM\Column(name="com", type="string", length=255, nullable=true)
      */
     private $com;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="insee", type="string", length=255)
+     * @ORM\Column(name="insee", type="string", length=255, nullable=true)
      */
     private $insee;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="edif", type="string", length=255)
+     * @ORM\Column(name="edif", type="string", length=255, nullable=true)
      */
     private $edif;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="adresse", type="text")
+     * @ORM\Column(name="adresse", type="text", nullable=true)
      */
     private $adresse;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="leg", type="text")
+     * @ORM\Column(name="leg", type="text", nullable=true)
      */
     private $leg;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="obj", type="text")
+     * @ORM\Column(name="obj", type="text", nullable=true)
      */
     private $obj;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lieucor", type="text")
+     * @ORM\Column(name="lieucor", type="text", nullable=true)
      */
     private $lieucor;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="autp", type="text")
+     * @ORM\Column(name="autp", type="text", nullable=true)
      */
     private $autp;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="autoeu", type="text")
+     * @ORM\Column(name="autoeu", type="text", nullable=true)
      */
     private $autoeu;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scle", type="text")
+     * @ORM\Column(name="scle", type="text", nullable=true)
      */
     private $scle;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="datepv", type="string", length=255)
+     * @ORM\Column(name="datepv", type="string", length=255, nullable=true)
      */
     private $datepv;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="serie", type="text")
+     * @ORM\Column(name="serie", type="text", nullable=true)
      */
     private $serie;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="typdoc", type="text")
+     * @ORM\Column(name="typdoc", type="text", nullable=true)
      */
     private $typdoc;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lbase", type="text")
+     * @ORM\Column(name="lbase", type="text", nullable=true)
      */
     private $lbase;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="copy", type="text")
+     * @ORM\Column(name="copy", type="text", nullable=true)
      */
     private $copy;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="videov", type="string", length=255)
+     * @ORM\Column(name="videov", type="string", length=255, nullable=true)
      */
     private $videov;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="videop", type="string", length=255)
+     * @ORM\Column(name="videop", type="string", length=255, nullable=true)
      */
     private $videop;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="dateqd", type="datetime")
+     * @ORM\Column(name="dateqd", type="date", nullable=true)
      */
     private $dateqd;
 
@@ -193,6 +193,7 @@ class Opendata
     public function __construct()
     {
         $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+
     }
 
 
@@ -715,7 +716,7 @@ class Opendata
     /**
      * Set dateqd
      *
-     * @param \DateTime $dateqd
+     * @param \Date $dateqd
      * @return Opendata
      */
     public function setDateqd($dateqd)
@@ -728,7 +729,7 @@ class Opendata
     /**
      * Get dateqd
      *
-     * @return \DateTime
+     * @return \Date
      */
     public function getDateqd()
     {
