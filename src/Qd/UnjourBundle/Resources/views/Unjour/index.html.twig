@@ -5,14 +5,183 @@
 			<title>Bienvenue sur ma première page sur la PGM !</title>
 		</head>
 	<body>
-		<h1>Hello {{ nom }} !</h1>
+    -----------------------------------------------
 
-		<p>
-		Le Hello World est un grand classique en programmation.
-		Il signifie énormément, car cela veut dire que vous avez
-		réussi à exécuter le programme pour accomplir une tâche simple
-		afficher ce hello world !
-		</p>
+    <h2>Visitors - Statistics</h2>
+    {% for tab in tabvisitors %}
+        {{ tab['ip'] }}   |  {{ tab['pays'] }} |  {{ tab['cp'] }}  |  {{ tab['ville'] }}<br />
+    {% endfor %}
+    -----------------------------------------------
+
+    <h2>Tags</h2>
+    {% for t in tags %}
+        {{ t.nom }} -
+    {% endfor %}
+    -----------------------------------------------
+
+    <h2>Photos de Marine</h2>
+    {% for m in marine %}
+        {{ m.startTime|date('d-m-Y') }} - ({% for t in m.tags %}{{ t.nom }} {% endfor %})<br />
+        {{ m.descr }}<br />
+    {% endfor %}
+    -----------------------------------------------
+
+    <h2>Guerre des gaz (photos)</h2>
+    {% for g in gaz %}
+        {{ g.legende }} <br />
+        <img src="{{ asset('bundles/qdunjour/images/'~g.path) }}">
+    {% endfor %}
+
+    -----------------------------------------------
+
+    <h2>Visitors</h2>
+        <h3>Nb de clic</h3>
+            <p>
+                {% for n in nbclicjour %}
+                    {% for nb in n %}
+                        nb de visites uniques aujourd'hui : {{ nb }}
+                    {% endfor %}
+                {% endfor %}<br />
+                {% for n in nbclicweek %}
+                    {% for nb in n %}
+                        nb de visites cette semaine : {{ nb }}
+                    {% endfor %}
+                {% endfor %}<br />
+                {% for n in nbclicmonth %}
+                    {% for nb in n %}
+                        nb de visites ce mois-ci : {{ nb }}
+                    {% endfor %}
+                {% endfor %}<br />
+                {% for n in bestip %}
+                    meilleure ip :
+                {{ n.adrip }}
+                    {% for nb in n %}
+                        {{ nb.adrip }}
+                    {% endfor %}
+                {% endfor %}<br />
+                {% for n in bestday %}
+                    meilleur jour en nb de connectés :
+                    {% for nb in n %}
+                        {{ nb }}
+                    {% endfor %}
+                {% endfor %}<br />
+            </p>
+    -----------------------------------------------
+
+    <h2>OpenData</h2>
+        <h3>Nb de ligne par thèmatique</h3>
+            <p>
+                {% for o in open %}
+                    {{ o['pays'] }}
+                {% endfor %}
+            </p>
+    -----------------------------------------------
+
+    <h2>FrontNewspaper</h2>
+        <h3>Une de journaux</h3>
+            <p>
+                {% for f in front %}
+                    {{ f.dcreat|date('d-m-Y') }}
+                        <i>({% for t in f.tags %}
+                            {{ t.nom }},
+                        {% endfor %})</i><br />
+                    Article paru dans<br />
+                    <img src="{{ asset('bundles/qdunjour/images/'~f.newspaper.path) }}"><br />
+                    <img src="{{ asset('bundles/qdunjour/images/'~f.path) }}"><br />
+                    {{ f.permalien }}<br />
+                {% endfor %}
+            </p>
+    -----------------------------------------------
+
+    <h2>Chronos</h2>
+        <h3>Fait du jour</h3>
+            <p>
+                {% for f in facts %}
+                    {{ f.startTime|date('d-m-Y') }}
+                        <i>(
+                            {% for t in f.tags %}{{ t.nom }} {% endfor %}
+                            )</i>(source {{ f.source.path1 }}) <br />
+                    {{ f.pres }}<br />
+                {% endfor %}
+            </p>
+    <div class="pagination">
+        <ul>
+            {# On utilise la fonction range(a, b) qui crée un tableau de
+            valeurs entre a et b #}
+            {% for p in range(1, nbPageF) %}
+                <li{% if p == page %} class="active"{% endif %}>
+                    <a href="{{ path('Hello', {'page': p}) }}">{{ p }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+        <h3>Evénements</h3>
+            <p>
+                {% for e in events %}
+                    {{ e.startTime|date('d-m-Y') }} - {{ e.endTime|date('d-m-Y') }}
+                    <i>({% for t in e.tags %}
+                        {{ t.nom }}
+                        {% endfor %})</i>(source{{ e.source.path1 }}) <br />
+                    {{ e.pres }}<br />
+                {% endfor %}
+            </p>
+        <div class="pagination">
+            <ul>
+                {# On utilise la fonction range(a, b) qui crée un tableau de
+                valeurs entre a et b #}
+                {% for p in range(1, nbPageE) %}
+                    <li{% if p == page %} class="active"{% endif %}>
+                        <a href="{{ path('Hello', {'page': p}) }}">{{ p }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    -----------------------------------------------
+
+    <h2>Actors</h2>
+    <p>
+        {% for a in actors %}
+            {{ a.name }} -
+            {{ a.firstname }}
+        <i>({% for t in a.tags %}
+                    {{ t.nom }},
+                {% endfor %})</i>
+            <br />
+            <img src="{{ asset('bundles/qdunjour/images/'~a.photos.path) }}">
+             - {{ a.photos.legende }} - <br />
+            {{ a.pres }}<br />
+            {{ a.birth|date('d-m-Y') }}<br />
+            {{ a.death|date('d-m-Y') }}<br />
+            {{ a.descr }}<br />
+            {% for b in books %}
+                {% if b.actors.id == a.id %}
+                    <h2>Books</h2>
+                    <a href="">voir le carnet de {{ a.firstname }} {{ a.name }}</a>
+                    <br /><br /><br /><br />
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+
+    </p>
+
+
+
+    <h2>Publicités</h2>
+    <p>
+        {% for p in pubs %}
+            <img src="{{ asset('bundles/qdunjour/images/'~p.path) }}"><br /><br />
+            Publicité parue dans<br />
+            <img src="{{ asset('bundles/qdunjour/images/'~p.newspaper.path) }}"><br />
+            le {{ p.dcreat|date('d-m-Y') }}
+            <i>({% for t in p.tags %}
+                {{ t.nom }},
+                {% endfor %})</i><br /><br />
+        {% endfor %}
+
+    </p>
+
 	</body>
 </html>
 

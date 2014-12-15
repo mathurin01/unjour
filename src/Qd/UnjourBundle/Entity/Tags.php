@@ -31,7 +31,11 @@ class Tags
     /**
      * @var string
      *
+<<<<<<< HEAD
      * @ORM\Column(name="logo", type="string", length=255)
+=======
+     * @ORM\Column(name="logo", type="string", length=255, nullable=true)
+>>>>>>> release_bdd
      */
     private $logo;
 
@@ -46,7 +50,11 @@ class Tags
     /**
      * Get id
      *
+<<<<<<< HEAD
      * @return integer 
+=======
+     * @return integer
+>>>>>>> release_bdd
      */
     public function getId()
     {
@@ -69,7 +77,11 @@ class Tags
     /**
      * Get nom
      *
+<<<<<<< HEAD
      * @return string 
+=======
+     * @return string
+>>>>>>> release_bdd
      */
     public function getNom()
     {
@@ -92,7 +104,11 @@ class Tags
     /**
      * Get logo
      *
+<<<<<<< HEAD
      * @return string 
+=======
+     * @return string
+>>>>>>> release_bdd
      */
     public function getLogo()
     {
@@ -115,7 +131,11 @@ class Tags
     /**
      * Get indice
      *
+<<<<<<< HEAD
      * @return integer 
+=======
+     * @return integer
+>>>>>>> release_bdd
      */
     public function getIndice()
     {
