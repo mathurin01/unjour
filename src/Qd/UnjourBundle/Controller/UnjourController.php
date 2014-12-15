@@ -12,8 +12,10 @@ class UnjourController extends Controller
 {
     public function indexAction($page)
     {
-        include('..\src\Qd\Statistics\php-1.11\geoipcity.inc');
-        include '..\src\Qd\Statistics\php-1.11\geoipregionvars.php';
+        //include('..\src\Qd\Statistics\php-1.11\geoipcity.inc');
+        //include '..\src\Qd\Statistics\php-1.11\geoipregionvars.php';
+        include("/var/www/html/unjour/src/Qd/Statistics/php-1.11/geoipcity.inc");
+        include "/var/www/html/unjour/src/Qd/Statistics/php-1.11/geoipregionvars.php";
         $pubs = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Publicites')->myFindByAll();
         $actors = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Actors')->myFindByAll();
         $books = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Books')->myFindByBooks();
@@ -42,7 +44,8 @@ class UnjourController extends Controller
         $marine = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Chronos')->myFindByTags(7);
         $gaz = $this->getDoctrine()->getManager()->getRepository('QdUnjourBundle:Photos')->myFindByTags(23);
 
-        $gi = geoip_open(realpath('..\src\Qd\Statistics\GeoLiteCity.dat'), GEOIP_STANDARD);
+        //$gi = geoip_open(realpath('..\src\Qd\Statistics\GeoLiteCity.dat'), GEOIP_STANDARD);
+        $gi = geoip_open(realpath("/var/www/html/unjour/src/Qd/Statistics/GeoLiteCity.dat"), GEOIP_STANDARD);
         $visitors = $this->getDoctrine()->getManager()
             ->getRepository('QdUnjourBundle:Visitors')->findAll();
         $tabvisitors = array();
